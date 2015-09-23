@@ -1,6 +1,6 @@
 # Superwave
 
-> This is html template for orto-pr based on framework__project
+> This is html template for superwave based on framework__project
 
 ## Usage
 
