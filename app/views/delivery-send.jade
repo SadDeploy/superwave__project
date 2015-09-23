@@ -1,0 +1,14 @@
+
+extends layouts/_default
+
+
+block content
+    - var title = { description: 'Заказ списком' }
+    include modules/_breadcrumbs
+    #main.container.padbot50
+        div
+            .content.padtopbot20
+                .text-center.padtop40
+                   p Ваш заказ отправлен.
+        .clearfix
+

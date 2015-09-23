@@ -1,0 +1,157 @@
+
+extends layouts/_default
+
+
+block content
+    - var title = { description: 'Контакты' }
+    include modules/_breadcrumbs
+    #main.container.padbot50
+        div
+            .content
+                #accordion.clearfix(role='tablist', aria-multiselectable="true")
+                    .panel.padtop0.mini__news
+                        h2.margleft10 Санкт-Петербург
+                        ul.list-unstyled.clearfix
+                            li.col-sm-8(role="tab", id="headingOne")
+                                h4.text-success
+                                    b Офис
+                                p.font-md.clearfix
+                                    i.fa.fa-map-marker.text-default.pull-left.fa-lg
+                                    span.col-xs-15.text-info
+                                        b Адрес:
+                                        span.text-default  190000, Санкт-Петербург, пер. Пирогова, д. 8
+                                p.font-md.clearfix
+                                    i.fa.fa-phone.text-default.pull-left.fa-lg
+                                    span.col-xs-15.text-info
+                                        b Телефон/факс:
+                                        span.text-default   +7 (812) 325-99-96/ 315-04-62
+                                p.font-md.clearfix
+                                    i.fa.fa-envelope.text-default.pull-left.fa-lg
+                                    span.col-xs-15.text-info
+                                        b E-mail:
+                                        span.text-default  mail.spb@swgroup.ru
+                                a(href='#collapseOne', class="tabs__title hidden-xs", data-toggle="collapse", data-parent="#accordion", aria-expanded="false", aria-controls="collapseOne") Посмотреть на карте &nbsp;
+                                    i.fa.fa-lg.text-success
+                                a(href='#collapseOne', class="tabs__title visible-xs popup__js") Посмотреть на карте &nbsp;
+                                    i.fa.fa-lg.text-success
+                            li.col-sm-8(role="tab", id="headingTwo")
+                                h4.text-success
+                                    b Склад
+                                p.font-md.clearfix
+                                    i.fa.fa-map-marker.text-default.pull-left.fa-lg
+                                    span.col-xs-15.text-info
+                                        b Адрес:
+                                        span.text-default  193149, Ленинградская обл., Всеволожский р-н,
+                                            br
+                                            |  пос. Красная Заря, д.15, терминал №1
+                                p.font-md.clearfix.padbot10
+                                    i.fa.fa-location-arrow.text-default.pull-left.fa-lg
+                                    span.col-xs-15.text-info
+                                        b GPS координаты:
+                                        span.text-default  59.842166,30.5593
+                                a(href='#collapseTwo', class="tabs__title hidden-xs", data-toggle="collapse", data-parent="#accordion", aria-expanded="false", aria-controls="collapseTwo") Посмотреть на карте &nbsp;
+                                    i.fa.fa-lg.text-success
+                                a(href='#collapseTwo', class="tabs__title visible-xs popup__js") Посмотреть на карте &nbsp;
+                                    i.fa.fa-lg.text-success
+                        .tab-pane.embed-container.collapse(id="collapseOne", role="tabpanel", aria-labelledby="headingOne")
+                            #{googleMap1}
+                        .tab-pane.embed-container.collapse(id="collapseTwo", role="tabpanel", aria-labelledby="headingTwo")
+                            #{googleMap2}
+                    .panel.mini__news
+                        h2 Москва
+                        ul.list-unstyled.clearfix
+                            li.col-sm-8(role="tab", id="headingThree")
+                                h4.text-success
+                                    b Офис
+                                p.font-md.clearfix
+                                    i.fa.fa-map-marker.text-default.pull-left
+                                    span.col-xs-15.text-info
+                                        b Адрес:
+                                        span.text-default  190000, Санкт-Петербург, пер. Пирогова, д. 8
+                                p.font-md.clearfix
+                                    i.fa.fa-phone.text-default.pull-left
+                                    span.col-xs-15.text-info
+                                        b Телефон/факс:
+                                        span.text-default   +7 (812) 325-99-96/ 315-04-62
+                                p.font-md.clearfix
+                                    i.fa.fa-envelope.text-default.pull-left
+                                    span.col-xs-15.text-info
+                                        b E-mail:
+                                        span.text-default  mail.spb@swgroup.ru
+                                a(href='#collapseThree', class="tabs__title hidden-xs", data-toggle="collapse", data-parent="#accordion", aria-expanded="false", aria-controls="collapseThree") Посмотреть на карте &nbsp;
+                                    i.fa.fa-lg.text-success
+                                a(href='#collapseThree', class="tabs__title visible-xs popup__js") Посмотреть на карте &nbsp;
+                                    i.fa.fa-lg.text-success
+                            li.col-sm-8(role="tab", id="headingFour")
+                                h4.text-success
+                                    b Склад
+                                p.font-md.clearfix
+                                    i.fa.fa-map-marker.text-default.pull-left
+                                    span.col-xs-15.text-info
+                                        b Адрес:
+                                        span.text-default  193149, Ленинградская обл., Всеволожский р-н,
+                                            br
+                                            |  пос. Красная Заря, д.15, терминал №1
+                                p.font-md.clearfix.padbot10
+                                    i.fa.fa-location-arrow.text-default.pull-left
+                                    span.col-xs-15.text-info
+                                        b GPS координаты:
+                                        span.text-default  59.842166,30.5593
+                                a(href='#collapseFour', class="tabs__title hidden-xs", data-toggle="collapse", data-parent="#accordion", aria-expanded="false", aria-controls="collapseFour") Посмотреть на карте &nbsp;
+                                    i.fa.fa-lg.text-success
+                                a(href='#collapseFour', class="tabs__title visible-xs popup__js") Посмотреть на карте &nbsp;
+                                    i.fa.fa-lg.text-success
+                        .tab-pane.embed-container.collapse(id="collapseThree", role="tabpanel", aria-labelledby="headingThree")
+                            #{googleMap1}
+                        .tab-pane.embed-container.collapse(id="collapseFour", role="tabpanel", aria-labelledby="headingFour")
+                            #{googleMap2}
+                    .panel.mini__news
+                        h2 Казахстан
+                        ul.list-unstyled.clearfix
+                            li.col-sm-8(role="tab", id="headingFive")
+                                h4.text-success
+                                    b Офис
+                                p.font-md.clearfix
+                                    i.fa.fa-map-marker.text-default.pull-left
+                                    span.col-xs-15.text-info
+                                        b Адрес:
+                                        span.text-default  190000, Санкт-Петербург, пер. Пирогова, д. 8
+                                p.font-md.clearfix
+                                    i.fa.fa-phone.text-default.pull-left
+                                    span.col-xs-15.text-info
+                                        b Телефон/факс:
+                                        span.text-default   +7 (812) 325-99-96/ 315-04-62
+                                p.font-md.clearfix
+                                    i.fa.fa-envelope.text-default.pull-left
+                                    span.col-xs-15.text-info
+                                        b E-mail:
+                                        span.text-default  mail.spb@swgroup.ru
+                                a(href='#collapseFive', class="tabs__title hidden-xs", data-toggle="collapse", data-parent="#accordion", aria-expanded="false", aria-controls="collapseFive") Посмотреть на карте &nbsp;
+                                    i.fa.fa-lg.text-success
+                                a(href='#collapseFive', class="tabs__title visible-xs popup__js") Посмотреть на карте &nbsp;
+                                    i.fa.fa-lg.text-success
+                            li.col-sm-8(role="tab", id="headingSix")
+                                h4.text-success
+                                    b Склад
+                                p.font-md.clearfix
+                                    i.fa.fa-map-marker.text-default.pull-left
+                                    span.col-xs-15.text-info
+                                        b Адрес:
+                                        span.text-default  193149, Ленинградская обл., Всеволожский р-н,
+                                            br
+                                            |  пос. Красная Заря, д.15, терминал №1
+                                p.font-md.clearfix.padbot10
+                                    i.fa.fa-location-arrow.text-default.pull-left
+                                    span.col-xs-15.text-info
+                                        b GPS координаты:
+                                        span.text-default  59.842166,30.5593
+                                a(href='#collapseSix', class="tabs__title hidden-xs", data-toggle="collapse", data-parent="#accordion", aria-expanded="false", aria-controls="collapseSix") Посмотреть на карте &nbsp;
+                                    i.fa.fa-lg.text-success
+                                a(href='#collapseSix', class="tabs__title visible-xs popup__js") Посмотреть на карте &nbsp;
+                                    i.fa.fa-lg.text-success
+                        .tab-pane.embed-container.collapse(id="collapseFive", role="tabpanel", aria-labelledby="headingFive")
+                            #{googleMap1}
+                        .tab-pane.embed-container.collapse(id="collapseSix", role="tabpanel", aria-labelledby="headingSix")
+                            #{googleMap2}
+        .clearfix
+

@@ -1,0 +1,26 @@
+
+extends layouts/_default
+
+
+block content
+    - var title = { description: 'Результаты поиска' }
+    include modules/_breadcrumbs
+    #main.container.padbot50
+        div
+            .content.padtopbot20
+                - for (var x = 0; x < 10; x++)
+                    .panel.micro_news.news.clearfix
+                        .col-xxs-4.col-xs-3.col-md-2
+                            img(src="images/result.jpg", alt="", class="img-responsive")
+                        .col-xxs-8.col-xs-13.col-md-13
+                            p.result__cat.padtop10
+                                a(href="#") Каталог. Карты памяти
+                            p.result__title.font-lg
+                                a.text-default.underline__link(href="#")
+                                    b.text-info Карта памяти
+                                    |  Transcend 4GB Class 10 TS4GSDHC10 в Санкт-Петербурге
+                            p.result__article
+                                b Артикул:
+                                    span  130K60230
+            include modules/_paginator
+        .clearfix

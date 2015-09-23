@@ -1,0 +1,104 @@
+
+extends layouts/_default
+
+
+block content
+    - var title = { description: 'Расчет толщины корешка книги на термоклей (КБС)' }
+    include modules/_breadcrumbs
+    #main.container.padbot50
+        div
+            .content.padtopbot20
+                p.col-xs-16 Взаимодействие корпорации и клиента специфицирует обществвенный системный анализ. По сути, контент стабилизирует сублимированный
+                    | поведенческий таргетинг. Организация практического взаимодействия осмысленно усиливает экспериментальный BTL. Бизнес-план
+                    | восстанавливает комплексный рейтинг. Стоит отметить, что направленный маркетинг основан на опыте повседневного применения.
+                .clearfix
+                form.padtopbot40.col-sm-12.center-block.text-info
+                    .form-group.clearfix
+                        .col-sm-5.text-right
+                            label Тип бумаги
+                                sup *
+                                |:
+                        .col-sm-9
+                            select#List1
+                                option(value="list1") офсетная
+                                option(value="list2") офсетная 2
+                                option(value="list3") офсетная 3
+                    .form-group.clearfix
+                        .col-sm-5.text-right
+                            label Плотность бумаги г/м
+                                sup *
+                                |:
+                        .col-sm-9
+                            select#List2
+                                option 80
+                                option 120
+                                option 160
+                    .form-group.clearfix
+                        .col-sm-5.text-right
+                            label Количество полос (страниц) внутреннего блока издания:
+                        .col-sm-9
+                            input(type="text")
+                    .form-group.clearfix
+                        .col-sm-5
+                        .col-xxs-8.col-xs-6
+                            button(class="btn btn-success", type="submit") Произвести расчет
+                form.padtopbot40.col-sm-12.center-block
+                    .form-group.clearfix
+                        .col-sm-11
+                            legend Запрос на расчет многополосного издания - заказ online
+                    .form-group.clearfix
+                        .col-sm-5
+                            label Название организации
+                                sup *
+                                | :
+                        .col-sm-9
+                            input(type="text", required)
+                    .form-group.clearfix
+                        .col-sm-5
+                            label Ваше имя
+                                sup *
+                                | :
+                        .col-sm-9
+                            input(type="text", required)
+                    .form-group.clearfix
+                        .col-sm-5
+                            label Контактный телефон:
+                        .col-sm-9
+                            input(type="text", class="validate-phone")
+                    .form-group.clearfix
+                        .col-sm-5
+                            label E-mail:
+                        .col-sm-9
+                            input(type="email")
+                    .form-group.clearfix
+                        .col-sm-5
+                            label Удобное для вас время звонка:
+                        .col-sm-9
+                            input(type="text")
+                    .form-group.clearfix
+                        .col-sm-5
+                            label Имя нашего менеджера, с которым Вы, уже работали:
+                        .col-sm-9
+                            input(type="text")
+                    .form-group.clearfix
+                        .col-sm-5
+                            label Тираж:
+                        .col-sm-9
+                            input(type="text")
+                    .form-group.clearfix
+                        .col-sm-5
+                            label Описание вашего заказа:
+                        .col-sm-9
+                            textarea
+                    .form-group.clearfix
+                        .col-sm-5
+                        .col-sm-9
+                            p Поля, отмеченные
+                                sup *
+                                | , обязательны для заполнения!
+                    .form-group.clearfix
+                        .col-sm-5
+                        .col-xxs-8.col-xs-6
+                            button(class="btn btn-success btn-long", type="submit") Отправить
+
+        .clearfix

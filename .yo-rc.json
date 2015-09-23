@@ -1,0 +1,15 @@
+{
+  "generator-lb": {
+    "name": "superWave",
+    "features": [
+      "includeFEFramework",
+      "includejQuery"
+    ],
+    "jQuery": "includejQuery2",
+    "feFramework": "includeBootstrap",
+    "sassCompilator": "libSass",
+    "ES6": false,
+    "multiLanguage": false,
+    "testFramework": false
+  }
+}

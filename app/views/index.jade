@@ -1,0 +1,69 @@
+extends layouts/_defaultM
+
+block content
+    include modules/_slider
+
+    .advantages.padtopbot50.font-md
+        .container
+            .col-sm-4.col-xs-8.col-xxs-12.inlineb.text-center
+                img(src="images/advantages_1.png", alt="advantages")
+                h6 Локализация продукта и брендирование
+                p Разработка индивидуального
+                    | дизайна, производство упаковки,
+                    | нанесение логотипа
+            .col-sm-4.col-xs-8.col-xxs-12.inlineb.text-center
+                img(src="images/advantages_2.png", alt="advantages")
+                h6 Производство карт памяти
+                p Нарезка микросхем, сборка и
+                    | упаковка карт памяти
+            .col-sm-4.col-xs-8.col-xxs-12.inlineb.text-center
+                img(src="images/advantages_3.png", alt="advantages")
+                h6 Покопийная печать
+                p Оптимизация офисной печатной
+                    | инфраструктуры на базе
+                    | решений Xerox
+            .col-sm-4.col-xs-8.col-xxs-12.inlineb.text-center
+                img(src="images/advantages_4.png", alt="advantages")
+                h6 Информационные системы
+                p Разработка информационных
+                    | систем по требованию
+                    | заказчика
+
+    .news__block.brand__element.font-lg
+        .container
+            .col-sm-7.hidden.visible-lg.visible-md.visible-sm
+                img(src="images/news_1.png", alt="news", class="img-responsive")
+            .col-sm-8
+                h1 Panasonic Россия фиксирует цены
+                    | на Toughbook и Toughpad
+                p Ноутбуки и планшеты для корпоративных заказчиков
+                    | Lenovo и Dell. Ноутбуки и планшеты для корпоративных
+                    | заказчиков Lenovo и Dell
+                a(href="#") Смотреть все новости >
+
+    .news__block.font-lg
+        .container
+            .col-sm-8
+                h1 Новые принтеры Xerox Phaser 3052NI
+                    | и Xerox Phaser 3260DNI
+                p Ноутбуки и планшеты для корпоративных заказчиков
+                    | Lenovo и Dell. Ноутбуки и планшеты для корпоративных
+                    | заказчиков Lenovo и Dell
+                a(href="#") Смотреть все новинки >
+            .col-sm-7.hidden.visible-lg.visible-md.visible-sm
+                img(src="images/news_2.png", alt="news", class="img-responsive")
+
+    .news__block.brand__element.font-lg
+        .container
+            .col-sm-7.hidden.visible-lg.visible-md.visible-sm
+                img(src="images/shares.png", alt="shares", class="img-responsive")
+            .col-sm-8
+                h1 Cпециальное предложение на
+                    | дизайнерскую бумагу
+                p Уважаемые партнеры, на текущий момент действует
+                    | специальное предложение на ряд дизайнерских бумаг,
+                    | стоимость изготовления продукции ниже рыночной до 60%.
+                a(href="#") Смотреть все акции >
+
+    include modules/_carousel
+    //p= index.footer

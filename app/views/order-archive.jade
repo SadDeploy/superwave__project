@@ -1,0 +1,121 @@
+
+extends layouts/_default
+
+
+block content
+    - var title = { description: 'Архив заказов' }
+    include modules/_breadcrumbs
+    #main.container.padbot50
+        div
+            .content.padtopbot20
+                include modules/_user-info
+                form.col-xs-16
+                    .padtop40.busket.clearfix
+                        h2 Номер заказа: 17
+                        h3 Статус заказа: Архив
+                        p.pull-left.text-info.padtop10 Позиций с 1-5 из 5
+                        a(href="#", class="btn btn-success pull-right margbot20 mobile__absolute")
+                            i.fa.fa-file-text-o
+                            |  Архив  заказов
+                        .clearfix
+                        table.table.table-string.table-responsive.hidden-sm.hidden-xs.block__delete__js
+                            thead
+                                tr
+                                    th Артикул
+                                    th Наименование
+                                    th Количество
+                                    th Цена  руб
+                                    th Сумма
+                            tbody
+                                - for (var x = 0; x < 4; x++)
+                                    tr
+                                        td.busket__article-item WC4260sp00
+                                        td.busket__name-item
+                                            a(href="#").underline__link Canon PowerShot SX60 HS
+                                        td.busket__availability-item 423
+                                        td.busket__price-item 234 784
+                                        td.busket__summ-item.font-lg 234 784
+                            tfoot
+                                tr
+                                    td(colspan="3")
+                                    td(colspan="2", class="font-xlg text-right") Итого
+                                        b  185 250 Р
+                            .table-catalog.hidden-md.hidden-lg.block__delete__js
+                                - for (var x = 0; x < 2; x++)
+                                    .news.margbot20
+                                        div.font-lg
+                                            a(href="#").underline__link Canon PowerShot SX60 HS
+                                        ul.table_of_contents.list-unstyled
+                                            li.clearfix
+                                                span Артикул
+                                                span.text-info WC4260sp00
+                                            li.clearfix
+                                                span Количество
+                                                span.text-info 243
+                                            li.clearfix
+                                                span Цена
+                                                span.text-info
+                                                    b 235 784
+                                            li.clearfix
+                                                span Сумма
+                                                span.text-info
+                                                    b 235 784
+                                .padbot40.clearfix.text-right
+                                    .col-xxs-12.inlineb.margbot20
+                                        span.text-info.font-xlg Итого
+                                            b  185 250 Р
+                    .padtop40.clearfix
+                    table.table.table-string.table-responsive.hidden-sm.hidden-xs.block__delete__js
+                        thead
+                            tr
+                                th Артикул
+                                th Наименование
+                                th Количество
+                                th Цена  руб
+                                th Сумма
+                        tbody
+                            - for (var x = 0; x < 4; x++)
+                                tr
+                                    td.busket__article-item WC4260sp00
+                                    td.busket__name-item
+                                        a(href="#").underline__link Canon PowerShot SX60 HS
+                                    td.busket__availability-item 423
+                                    td.busket__price-item 234 784
+                                    td.busket__summ-item.font-lg 234 784
+                        tfoot
+                            tr
+                                td(colspan="3")
+                                td(colspan="2", class="font-xlg text-right") Итого
+                                    b  185 250 $
+                        .table-catalog.hidden-md.hidden-lg.block__delete__js
+                            - for (var x = 0; x < 2; x++)
+                                .news.margbot20
+                                    div.font-lg
+                                        a(href="#").underline__link Canon PowerShot SX60 HS
+                                    ul.table_of_contents.list-unstyled
+                                        li.clearfix
+                                            span Артикул
+                                            span.text-info WC4260sp00
+                                        li.clearfix
+                                            span Количество
+                                            span.text-info 243
+                                        li.clearfix
+                                            span Цена
+                                            span.text-info
+                                                b 235 784
+                                        li.clearfix
+                                            span Сумма
+                                            span.text-info
+                                                b 235 784
+                            .padbot40.clearfix.text-right
+                                .col-xxs-12.inlineb.margbot20
+                                    span.text-info.font-xlg Итого
+                                        b  185 250 Р
+                    .padtop40.clearfix
+                        .pull-right.margbot20
+                            a(href="#", class="btn btn-default")
+                                i.fa.fa-close.text-danger
+                                |  Удалить
+
+        .clearfix
+

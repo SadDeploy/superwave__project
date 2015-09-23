@@ -1,0 +1,125 @@
+if title.description == 'Менеджер по обеспечению качества'
+    form.padbot40.padtop50
+
+        .form-group.clearfix
+            .col-sm-12
+                legend Форма отправки резюме
+        .form-group.clearfix
+            .col-sm-4
+                label ФИО
+                        sup *
+                        |:
+            .col-sm-10
+                input(type="text", required)
+        .form-group.clearfix
+            .col-sm-4
+                label Дата рождения
+                        sup *
+                        |:
+            .col-sm-10
+                input(type="text", class="validate-date", required)
+        .form-group.clearfix
+            .col-sm-4
+                label Образование
+                        sup *
+                        |:
+            .col-sm-10
+                input(type="text", required)
+        .form-group.clearfix
+            .col-sm-4
+                label E-mail
+                        sup *
+                        |:
+            .col-sm-10
+                input(type="email", required)
+        .form-group.clearfix
+            .col-sm-4
+                label Прикрепить резюме:
+            .col-sm-10
+                .input-group.col-sm-16.col-xs-16
+                    input(type="text", class="name_js form-control", readonly)
+                    .input-group-btn.custom-file
+                        input(type="file", class="file_js")
+                        button.btn.btn-success.btn-block Добавить
+        .form-group.clearfix
+            .col-sm-4
+                label Введите код на картинке
+                    sup *
+                    | :
+            .col-sm-4.col-xs-8
+                input(type="text", required)
+            .col-sm-2.col-xs-6
+                img(src="images/capcha.jpg", alt="capcha")
+        .form-group.clearfix
+            .col-sm-4
+            .col-sm-10
+                p Поля, отмеченные
+                    sup *
+                    | , обязательны для заполнения!
+        .form-group.clearfix
+            .col-sm-4
+            .col-sm-6.col-xs-8.col-xxs-8
+                button(class="btn btn-success btn-block", type="submit") Отправить резюме
+if title.description == 'Заголовок H1'
+    form.padbot40.padtop50
+        .form-group.clearfix
+            .col-sm-5
+            .col-sm-11
+                legend Запрос на расчет многополосного издания - заказ online
+        .form-group.clearfix
+            .col-sm-5
+                label Название организации
+                    sup *
+                    | :
+            .col-sm-8
+                input(type="text", required)
+        .form-group.clearfix
+            .col-sm-5
+                label Ваше имя
+                    sup *
+                    | :
+            .col-sm-8
+                input(type="text", required)
+        .form-group.clearfix
+            .col-sm-5
+                label Контактный телефон:
+            .col-sm-8
+                input(type="text", class="validate-phone")
+        .form-group.clearfix
+            .col-sm-5
+                label E-mail:
+            .col-sm-8
+                select
+                    option офсетная
+                    option листовая 2
+                    option листовая 3
+        .form-group.clearfix
+            .col-sm-5
+                label Удобное для вас время звонка:
+            .col-sm-8
+                input(type="text")
+        .form-group.clearfix
+            .col-sm-5
+                label Имя нашего менеджера, с которым Вы, уже работали:
+            .col-sm-8
+                input(type="text")
+        .form-group.clearfix
+            .col-sm-5
+                label Тираж:
+            .col-sm-8
+                input(type="text")
+        .form-group.clearfix
+            .col-sm-5
+                label Описание вашего заказа:
+            .col-sm-8
+                textarea
+        .form-group.clearfix
+            .col-sm-5
+            .col-sm-8
+                p Поля, отмеченные
+                    sup *
+                    | , обязательны для заполнения!
+        .form-group.clearfix
+            .col-sm-5
+            .col-sm-4
+                button(class="btn btn-success btn-block", type="submit") Отправить

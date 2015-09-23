@@ -1,0 +1,400 @@
+
+extends layouts/_default
+
+
+block content
+    - var title = { description: 'Заголовок H1' }
+    include modules/_breadcrumbs
+    #main.container.padbot50
+        include modules/_sidebar
+            //news_gallery
+        .col-xs-pull-5.col-xs-10
+            .content.aticle_post
+                p.padtop20
+                    span.news__date
+                        i.fa.fa-calendar
+                        |  27 июля 2015
+
+                ul.bxslider.bxslider__img
+                    - for (var x = 0; x < 10; x++)
+                        li
+                            a(href="images/product_card.jpg", class="fancybox-thumb", rel="fancybox-thumb")
+                                img(src="images/news_img.jpg", alt="")
+                .col-xs-15.center-block.padbot20
+                    #bx-pager.bxslider
+                        - for (var x = 0; x < 10; x++)
+                            a(href="#", data-slide-index="#{x}")
+                                img(src="images/slider_mini_#{x}.jpg", alt="")
+                p Взаимодействие корпорации и клиента специфицирует обществвенный системный анализ. По
+                    | сути, контент стабилизирует сублимированный поведенческий таргетинг. Организация
+                    | практического взаимодействия осмысленно усиливает экспериментальный BTL. Бизнес-план
+                    | восстанавливает комплексный рейтинг. Стоит отметить, что направленный маркетинг основан
+                    | на опыте повседневного применения.
+                p К тому же &nbsp;
+                    a(href="#") ссылка в тексте
+                    |  точечное воздействие последовательно транслирует фирменный медиабизнес,
+                    | отвоевывая рыночный сегмент. Рекламное сообщество масштабирует креативный бренд,
+                    | учитывая современные тенденции. Более того, ассортиментная политика предприятия
+                    | охватывает анализ зарубежного опыта.
+            include modules/_pager
+        .clearfix
+            // sample title
+        .col-sm-8.type__text.padbot50
+            h2 Заголовок H2
+            ul
+                - for (var x = 0; x < 2; x++)
+                    li Диск штампованный 6.0Jx15H2 4/100/54.1 ET48
+                        ul
+                            li Диск штампованный 6.0Jx15H2 4/100/54.1 ET48
+                            li Диск штампованный 6.0Jx15H2 4/100/54.1 ET48
+                - for (var y = 0; y < 3; y++)
+                    li Диск штампованный 6.0Jx15H2 4/100/54.1 ET48
+        .col-sm-8.padbot50
+            h1 Заголовок H1
+            h2 Заголовок H2
+            h3 Заголовок H3
+            h4 Заголовок H4
+            h5 Заголовок H5
+        .clearfix
+            // sapmle form
+        include modules/_feedback
+        .clearfix
+            //sample card-product
+            h2.padbot40 Карта товара
+            include modules/_card
+        .clearfix
+        .type__text.padbot50
+            h2 Нумерованный список
+            p Нумерованный список
+            ol
+                - for (var x = 0; x < 2; x++)
+                    li Вам не нужно оплачивать разработку и изготовление штампа (2 000-10 000 р.);
+                    li Вам не нужно ждать изготовления штампа (3-5 дней);
+                    li Вы сокращаете время изготовления заказа, разложив изделия на лист.
+        .clearfix
+            // sample stamp-catalog
+        - for (var x = 1; x < 5; x++)
+            .col-xs-4.text-center.padbot60
+                a(href="#")
+                    img(src="images/stamp_#{x}.jpg", alt="", class="img-circle img-thumbnail")
+                p Конверты, кармашки,
+                    br
+                    |  футляры, буклеты,
+                    br
+                    |  папки
+        .clearfix
+             // sample catalog
+        div
+            h2.col-xs-16.padbot40 Каталог
+            .padbot20.clearfix
+                .pull-right
+                    button(type="submit", class="btn btn-default")
+                        i.fa.fa-download
+                        |  выгрузить в CSV
+                .pull-right.margright10
+                    button(type="submit", class="btn btn-default")
+                        i.fa.fa-file-o
+                        |  заказ списком
+            include modules/_filter
+            .catalog.clearfix.pull-right
+                .pull-left.data__sortM.data__sort-js Сортировать по:
+                    .inlineb.data__sort-item.data__sort-item-js
+                        a(href="#", class="data__sort") Скидка
+                            i.fa.fa-lg
+                .pull-right
+                    p
+                        b.font-xlg.text-default 30256
+                        span  товаров
+                table.table.table-striped.table-responsive.table-catalog
+                    thead
+                        tr.data__sort.data__sort-js
+                            th Артикул
+                            th Наименование
+                            th.data__sort-item.data__sort-item-js Наличие
+                                i.fa.fa-lg
+                            th.data__sort-item.data__sort-item-js Транзит
+                                br
+                                | <14
+                                i.fa.fa-lg
+                            th.data__sort-item.data__sort-item-js Транзит
+                                br
+                                | >14
+                                i.fa.fa-lg
+                            th.data__sort-item.data__sort-item-js Резерв
+                                i.fa.fa-lg
+                            th.data__sort-item.data__sort-item-js Цена
+                                br
+                                | руб
+                                i.fa.fa-lg
+                            th Кол-во
+                            th &nbsp;
+                    tbody
+                        - for (var x = 0; x < 2; x++)
+                            tr
+                                td.busket__article-item WC4260sp00
+                                    span.show.padtop10.padbot0.font-sm.text-default Аналоги:
+                                td.busket__name-item
+                                    a(href="#").underline__link Canon PowerShot SX60 HS
+                                    - for (var y = 0; y < 3; y++)
+                                        button.btn.btn-default.btn-xs.text-default WC4260sp
+                                td.busket__availability-item 12
+                                td.busket__transitm-item 0
+                                td.busket__transitb-item 0
+                                td.busket__reserv-item 3
+                                td.busket__price-item 23 877
+                                td.busket__quantity-item
+                                    .input-group.product_quantity_js
+                                        a(href="#", class="btn btn-default btn-sm input-group-addon inc") -
+                                        input(type="text", value="1", class="text-center quantity form-control", maxlength="3")
+                                        a(href="#", class="btn btn-default btn-sm input-group-addon dec") +
+                                td
+                                    button.btn.btn-success.btn-sm В корзину
+                            tr
+                                td.busket__article-item WC4260sp00
+                                    span.show.padtop10.padbot0.font-sm.text-default Аналоги:
+                                    span.show.padtop10.padbot0.font-sm.text-success Вхдит в состав BOM:
+                                td.busket__name-item
+                                    a(href="#").underline__link Canon PowerShot SX60 HS
+                                    - for (var y = 0; y < 3; y++)
+                                        button.btn.btn-default.btn-xs.text-default WC4260sp
+                                    - for (var y = 0; y < 2; y++)
+                                        button.btn.btn-success.btn-xs WC4260sp
+                                td.busket__availability-item 12
+                                td.busket__transitm-item 0
+                                td.busket__transitb-item 0
+                                td.busket__reserv-item 3
+                                td.busket__price-item 23 877
+                                td.busket__quantity-item
+                                    .input-group.product_quantity_js
+                                        a(href="#", class="btn btn-default btn-sm input-group-addon inc") -
+                                        input(type="text", value="1", class="text-center quantity form-control", maxlength="3")
+                                        a(href="#", class="btn btn-default btn-sm input-group-addon dec") +
+                                td
+                                    button.btn.btn-success.btn-sm В корзину
+                    tfoot
+                        tr
+                            td(colspan="9", class="font-xlg text-right") Итого
+                                b  185 250 Р
+                h2.padtop40 Опции
+                table.table.table-striped.table-responsive.table-catalog
+                    thead
+                        tr.data__sort.data__sort-js
+                            th Артикул
+                            th Наименование
+                            th.data__sort-item.data__sort-item-js Наличие
+                                i.fa.fa-lg
+                            th.data__sort-item.data__sort-item-js Транзит
+                                br
+                                | <14
+                                i.fa.fa-lg
+                            th.data__sort-item.data__sort-item-js Транзит
+                                br
+                                | >14
+                                i.fa.fa-lg
+                            th.data__sort-item.data__sort-item-js Резерв
+                                i.fa.fa-lg
+                            th.data__sort-item.data__sort-item-js Цена
+                                br
+                                | руб
+                                i.fa.fa-lg
+                            th Кол-во
+                            th &nbsp;
+                    tbody
+                        - for (var x = 0; x < 3; x++)
+                            tr
+                                td.busket__article-item WC4260sp00
+                                    span.show.padtop10.padbot0.font-sm.text-default Аналоги:
+                                td.busket__name-item
+                                    a(href="#").underline__link Canon PowerShot SX60 HS
+                                    - for (var y = 0; y < 3; y++)
+                                        button.btn.btn-default.btn-xs.text-default WC4260sp
+                                td.busket__availability-item 12
+                                td.busket__transitm-item 0
+                                td.busket__transitb-item 0
+                                td.busket__reserv-item 3
+                                td.busket__price-item 23 877
+                                td.busket__quantity-item
+                                    .input-group.product_quantity_js
+                                        a(href="#", class="btn btn-default btn-sm input-group-addon inc") -
+                                        input(type="text", value="1", class="text-center quantity form-control", maxlength="3")
+                                        a(href="#", class="btn btn-default btn-sm input-group-addon dec") +
+                                td
+                                    button.btn.btn-success.btn-sm В корзину
+                h2.padtop40 Расходные материалы
+                table.table.table-striped.table-responsive.table-catalog
+                    thead
+                        tr.data__sort.data__sort-js
+                            th Артикул
+                            th Наименование
+                            th.data__sort-item.data__sort-item-js Наличие
+                                i.fa.fa-lg
+                            th.data__sort-item.data__sort-item-js Транзит
+                                br
+                                | <14
+                                i.fa.fa-lg
+                            th.data__sort-item.data__sort-item-js Транзит
+                                br
+                                | >14
+                                i.fa.fa-lg
+                            th.data__sort-item.data__sort-item-js Резерв
+                                i.fa.fa-lg
+                            th.data__sort-item.data__sort-item-js Цена
+                                br
+                                | руб
+                                i.fa.fa-lg
+                            th Кол-во
+                            th &nbsp;
+                    tbody
+                        - for (var x = 0; x < 3; x++)
+                            tr
+                                td.busket__article-item WC4260sp00
+                                    span.show.padtop10.padbot0.font-sm.text-default Аналоги:
+                                td.busket__name-item
+                                    a(href="#").underline__link Canon PowerShot SX60 HS
+                                    - for (var y = 0; y < 3; y++)
+                                        button.btn.btn-default.btn-xs.text-default WC4260sp
+                                td.busket__availability-item 12
+                                td.busket__transitm-item 0
+                                td.busket__transitb-item 0
+                                td.busket__reserv-item 3
+                                td.busket__price-item 23 877
+                                td.busket__quantity-item
+                                    .input-group.product_quantity_js
+                                        a(href="#", class="btn btn-default btn-sm input-group-addon inc") -
+                                        input(type="text", value="1", class="text-center quantity form-control", maxlength="3")
+                                        a(href="#", class="btn btn-default btn-sm input-group-addon dec") +
+                                td
+                                    button.btn.btn-success.btn-sm В корзину
+                .pull-left
+                    include modules/_paginator
+                .pull-right.padtopbot20.col-xs-6.row
+                    .row
+                        .col-xs-11.inlineb.v-middle.fl-none  Показывать на странице:
+                        .col-xs-5.inlineb.v-middle.fl-none.row
+                            .row
+                                select
+                                    option 100
+                                    option 50
+                                    option 10
+                                    option 5
+        .clearfix
+            // sample busket
+        div
+            h2.padbot40 Корзина
+            include modules/_user-info
+            form
+                .padtop40.busket.clearfix
+                    h3.pull-left  У вас в корзине
+                        b  33 позиции
+                        |  на общую сумму
+                        b  4 185 250 рублей
+                    a(href="#").text-info.pull-right.font-md.padtop20.delete__js
+                        i.fa.fa-close.fa-lg.text-danger &nbsp;
+                        | Очистить корзину
+                    table.table.table-striped.table-responsive.block__delete__js
+                        thead
+                            tr
+                                th Артикул
+                                th Наименование
+                                th Наличие
+                                th Транзит<14
+                                th Транзит>14
+                                th Резерв
+                                th Цена  руб
+                                th Кол-во
+                                th Сумма
+                                th Удалить
+                        tbody
+                            - for (var x = 0; x < 4; x++)
+                                tr
+                                    td.busket__article-item WC4260sp00
+                                    td.busket__name-item
+                                        a.underline__link Canon PowerShot SX60 HS
+                                    td.busket__availability-item 12
+                                    td.busket__transitm-item 0
+                                    td.busket__transitb-item 0
+                                    td.busket__reserv-item 3
+                                    td.busket__price-item 1 323 877
+                                    td.busket__quantity-item
+                                        .input-group.product_quantity_js
+                                            a(href="#", class="btn btn-default input-group-addon inc") -
+                                            input(type="text", value="1", class="text-center quantity form-control", maxlength="3")
+                                            a(href="#", class="btn btn-default input-group-addon dec") +
+                                    td.busket__summ-item.font-lg 2 423 877
+                                    td.busket__del-item.busket__delete-js
+                                        a(href="#")
+                                            i.fa.fa-close.fa-lg.text-danger
+                        tfoot
+                            tr
+                                td(colspan="6")
+                                td(colspan="2")
+                                    a(href="#", class="btn btn-default btn-md")
+                                        b Пересчитать
+                                td(colspan="2", class="font-xlg") Итого
+                                    b  185 250 Р
+                .padtop40.busket.clearfix
+                h3.pull-left  У вас в корзине
+                    b  33 позиции
+                    |  на общую сумму
+                    b  4 185 250 рублей
+                table.table.table-striped.table-responsive.block__delete__js
+                    thead
+                        tr
+                            th Артикул
+                            th Наименование
+                            th Наличие
+                            th Транзит<14
+                            th Транзит>14
+                            th Резерв
+                            th Цена  руб
+                            th Кол-во
+                            th Сумма
+                            th Удалить
+                    tbody
+                        - for (var x = 0; x < 4; x++)
+                            tr
+                                td.busket__article-item WC4260sp00
+                                td.busket__name-item
+                                    a.underline__link Canon PowerShot SX60 HS
+                                td.busket__availability-item 12
+                                td.busket__transitm-item 0
+                                td.busket__transitb-item 0
+                                td.busket__reserv-item 3
+                                td.busket__price-item 1 323 877
+                                td.busket__quantity-item
+                                    .input-group.product_quantity_js
+                                        a(href="#", class="btn btn-default input-group-addon inc") -
+                                        input(type="text", value="1", class="text-center quantity form-control", maxlength="3")
+                                        a(href="#", class="btn btn-default input-group-addon dec") +
+                                td.busket__summ-item.font-lg 2 423 877
+                                td.busket__del-item.busket__delete-js
+                                    a(href="#")
+                                        i.fa.fa-close.fa-lg.text-danger
+                    tfoot
+                        tr
+                            td(colspan="4")
+                                label Добавить товары по артикулу
+                                .input-group.pull-right
+                                    input(type="text", class="form-control", readonly)
+                                    .input-group-addon.input-group-btn
+                                        button.btn.btn-success.btn-block Добавить
+                            td(colspan="2")
+                            td(colspan="2")
+                                a(href="#", class="btn btn-default btn-md")
+                                    b Пересчитать
+                            td(colspan="2", class="font-xlg") Итого
+                                b  185 250 Р
+                .padtop40.busket.clearfix
+                    .form-group
+                        .col-xs-9.clearfix.row
+                            label.font-md Комментарии к заказу
+                        .col-xs-9.row
+                            textarea
+                .padtop40.busket.clearfix
+                    .pull-right
+                        button(type="submit", class="btn btn-success btn-md") Отправить менеджеру
+                    .pull-right.margright10
+                        button(type="submit", class="btn btn-default btn-md") Сохранить заказ
+        .clearfix
+
+

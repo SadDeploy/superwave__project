@@ -1,0 +1,97 @@
+
+extends layouts/_default
+
+
+block content
+    - var title = { description: 'Личный кабинет' }
+    include modules/_breadcrumbs
+    #main.container.padbot50
+        div
+            .content.padtopbot20
+                include modules/_user-info2
+                form.col-sm-13
+                    h2.col-xs-16.margbot30 Персональные данные
+                    .col-xs-16.padbot70
+                        .user__img.center-block-xs.text-center-xs
+                            div
+                                img(src="images/ava_big.jpg", class="img-responsive margbot10")
+                                p.text-center.busket__delete-js
+                                    span.name_js_text aXl95r9f1Lw.jpg
+                                    span  11.03 КБ &nbsp;
+                                    a(href="#", class="text-info") X
+                            .custom-file.margtop10
+                                input(type="file", class="file_js")
+                                button.btn.btn-default.btn-block
+                                    i.fa.fa-user-plus
+                                    |  Добавить фотографию
+                    .col-xs-13.center-block-xs.col-xxs-12
+                        .col-sm-16
+                            h4.margtop0 Общая информация
+                        .form-group.clearfix
+                            .col-sm-4
+                                label Фамилия:
+                            .col-sm-11
+                                input(type="text")
+                        .form-group.clearfix
+                            .col-sm-4
+                                label Имя:
+                            .col-sm-11
+                                input(type="text")
+                        .form-group.clearfix
+                            .col-sm-4
+                                label Отчество:
+                            .col-sm-11
+                                input(type="text")
+                        .form-group.clearfix
+                            .col-sm-4
+                                label Компания:
+                            .col-sm-11
+                                input(type="text")
+                        .form-group.clearfix
+                            .col-sm-4
+                                label Город
+                                    sup *
+                                    | :
+                            .col-sm-11
+                                input(type="text", required)
+                        .col-sm-16.margtop40
+                            h4 Контактная информация
+                        .form-group.clearfix
+                            .col-sm-4
+                                label Телефон
+                                    sup *
+                                    | :
+                            .col-sm-11
+                                input(type="text", class="validate-phone", required)
+                        .form-group.clearfix
+                            .col-sm-4
+                                label Skype:
+                            .col-sm-11
+                                input(type="text")
+                        .col-sm-16.margtop40
+                            h4 Данные для авторизации
+                        .form-group.clearfix
+                            .col-sm-4
+                                label E-mail:
+                            .col-sm-11
+                                input(type="email")
+                        .form-group.clearfix
+                            .col-sm-4
+                                label Старый пароль:
+                            .col-sm-11
+                                input(type="password")
+                        .form-group.clearfix
+                            .col-sm-4
+                                label Новый пароль:
+                            .col-sm-11
+                                input(type="password")
+                        .form-group.clearfix
+                            .col-sm-4
+                                label Повторить пароль:
+                            .col-sm-11
+                                input(type="password")
+                        .form-group.clearfix
+                            .col-sm-4
+                            .col-sm-6.col-xs-8.center-block-xs
+                                a(href="#", class="btn btn-success btn-block", type="submit") Сохранить
+        .clearfix

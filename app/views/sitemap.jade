@@ -1,0 +1,138 @@
+
+extends layouts/_default
+
+
+block content
+    - var title = { description: 'Карта сайта' }
+    include modules/_breadcrumbs
+    #main.container.padbot50
+        div
+            .content.padtopbot20
+                .panel.sitemap.clearfix
+                    .col-xs-16.col-sm-8.col-md-6
+                        .sitemap__element
+                            h3
+                                b Каталог
+                            ul.list-unstyled
+                                li
+                                    a(href="#") Карты памяти, USB акопители
+                                    ul
+                                        li
+                                            a(href="#") USB накопители
+                                            ul
+                                                - for (var x = 0; x < 4; x++)
+                                                    li
+                                                        a(href="#") Индустриальные карты памяти
+                                        li
+                                            a(href="#") Карты памяти, индустриальный флеш
+                                            ul
+                                                - for (var x = 0; x < 4; x++)
+                                                    li
+                                                        a(href="#") Название категории
+                                li
+                                    a(href="#") Копировальная и печатающая техника,
+                                        | расходные материалы, бумага
+                                    ul
+                                        li Копировальная техника
+                                            ul
+                                                - for (var x = 0; x < 3; x++)
+                                                    li
+                                                        a(href="#") Название категориии
+                                        li
+                                            a(href="#") Расходные материалы
+                                            ul
+                                                - for (var x = 0; x < 2; x++)
+                                                    li
+                                                        a(href="#") Название категории
+                                li
+                                    a(href="#") Модули памяти
+                                    ul
+                                        li Копировальная техника
+                                            ul
+                                                - for (var x = 0; x < 3; x++)
+                                                    li
+                                                        a(href="#") Название категориии
+                                        li
+                                            a(href="#") Расходные материалы
+                                            ul
+                                                - for (var x = 0; x < 2; x++)
+                                                    li
+                                                        a(href="#") Название категории
+                    .col-xs-16.col-sm-8.col-md-6
+                        .sitemap__element
+                            h3
+                                b Дистрибуция
+                            ul.list-unstyled
+                                li
+                                    a(href="#") Модули и карты памяти
+                                li
+                                    a(href="#") Копировально-множительная техника
+                                li
+                                    a(href="#") Источники бесперебойного питания
+                                li
+                                    a(href="#") Аксессуары
+                        .sitemap__element
+                            h3
+                                b Поставки
+                            ul.list-unstyled
+                                li
+                                    a(href="#") Оборудование
+                                li
+                                    a(href="#") Услуги
+                        .sitemap__element
+                            h3
+                                b Системная интеграция
+                        .sitemap__element
+                                h3
+                                    b Производство
+                                ul.list-unstyled
+                                    li
+                                        a(href="#") Полиграфия
+                                        ul
+                                            li
+                                                a(href="#") Услуги
+                                            li
+                                                a(href="#") Оборудование
+                                            li
+                                                a(href="#") Каталог штампов
+                                            li
+                                                a(href="#") Калькуляторы
+                                                ul
+                                                    li
+                                                        a(href="#") Расчет корешка КБС
+                                                    li
+                                                        a(href="#") Калькулятор раскроя
+                                    li
+                                        a(href="#") Брендирование
+                                    li
+                                        a(href="#") Упаковка
+                                    li
+                                        a(href="#") Сборка серверов и компьютеров
+                    .col-xs-16.col-sm-8.col-md-4
+                        .sitemap__element
+                            h3
+                                b Сервис
+                            ul.list-unstyled
+                                li
+                                    a(href="#") Обслуживание
+                                li
+                                    a(href="#") Покопийная печать
+                                li
+                                    a(href="#") Услуги колл-центра
+                        .sitemap__element
+                            h3
+                                b Компания
+                            ul.list-unstyled
+                                li
+                                    a(href="#") О компании
+                                li
+                                    a(href="#") Наши партнеры о нас
+                                li
+                                    a(href="#") Партнерские статусы
+                                li
+                                    a(href="#") Мероприятия
+                                li
+                                    a(href="#") Вакансии
+                                li
+                                    a(href="#") Контакты
+        .clearfix

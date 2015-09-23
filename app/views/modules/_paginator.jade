@@ -1,0 +1,9 @@
+.text-center
+    ul.pagination
+        li.active
+            a(href='#') <
+        - for (var x = 1; x < 6; x++)
+            li
+                a(href='#')= x
+        li
+            a(href='#') >

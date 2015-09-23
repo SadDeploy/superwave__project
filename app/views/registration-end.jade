@@ -1,0 +1,19 @@
+
+extends layouts/_default
+
+
+block content
+    - var title = { description: 'Регистрация' }
+    include modules/_breadcrumbs
+    #main.container.padbot50
+        div
+            .content.padtopbot20
+                .text-center.padtop40.col-xxs-12.col-xs-14.col-sm-14.col-md-12.center-block
+                    h2 Благодарим за регистрацию!
+                    p Чтобы воспользоваться личным кабинетом Вам необходимо активировать вашу учетную
+                        br
+                        | запись. Письмо с инструкцией по активации уже отправлено на указанный Вами электронный ящик.
+                        br
+                        | Получите письмо и следуйте инструкции
+        .clearfix
+

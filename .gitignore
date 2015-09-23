@@ -1,0 +1,10 @@
+node_modules
+.tmp
+.sass-cache
+bower_components
+.env
+bower_components
+node_modules
+.tmp
+.idea
+dist

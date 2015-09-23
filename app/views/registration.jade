@@ -1,0 +1,98 @@
+
+extends layouts/_default
+
+
+block content
+    - var title = { description: 'Регистрация' }
+    include modules/_breadcrumbs
+    #main.container.padbot50
+        div
+            .content.padtopbot20
+                p.col-xs-16 Взаимодействие корпорации и клиента специфицирует обществвенный системный анализ. По сути, контент стабилизирует сублимированный
+                    | поведенческий таргетинг. Организация практического взаимодействия осмысленно усиливает экспериментальный BTL. Бизнес-план
+                    | восстанавливает комплексный рейтинг. Стоит отметить, что направленный маркетинг основан на опыте повседневного применения.
+                .clearfix
+                form.padtopbot50.col-xs-11.center-block
+                    .form-group.clearfix
+                        .col-sm-3
+                            label ФИО
+                                sup *
+                                | :
+                        .col-sm-9
+                            input(type="text", required)
+                    .form-group.clearfix
+                        .col-sm-3
+                            label E - mail
+                                sup *
+                                | :
+                        .col-sm-9
+                            input(type="email", required)
+                    .form-group.clearfix
+                        .col-sm-3
+                            label Компания:
+                            sup *
+                            | :
+                        .col-sm-9
+                            input(type="text", required)
+                    .form-group.clearfix
+                        .col-sm-3
+                            label Страна:
+                            sup *
+                            | :
+                        .col-sm-9
+                            select
+                                option Выбрать страну
+                                option Россия
+                                option Китай
+                                option Корея
+                    .form-group.clearfix
+                        .col-sm-3
+                            label Регион:
+                            sup *
+                            | :
+                        .col-sm-9
+                            select
+                                option Выбрать регион
+                                option Россия
+                                option Китай
+                                option Корея
+                    .form-group.clearfix
+                        .col-sm-3
+                            label Город:
+                            sup *
+                            | :
+                        .col-sm-9
+                            select
+                                option Выбрать город
+                                option Россия
+                                option Китай
+                                option Корея
+                    .form-group.clearfix
+                        .col-sm-3
+                            label Телефон:
+                            sup *
+                            | :
+                        .col-sm-9
+                            input(type="text", class="validate-phone", required)
+                    .form-group.clearfix
+                        .col-sm-3
+                            label Введите код на картинке
+                                sup *
+                                | :
+                        .col-sm-4
+                            input(type="text", required)
+                        .col-sm-3
+                            img(src="images/capcha.jpg", alt="capcha")
+                    .form-group.clearfix
+                        .col-sm-3
+                        .col-sm-10
+                            p Поля, отмеченные
+                                sup *
+                                | , обязательны для заполнения!
+                    .form-group.clearfix
+                        .col-sm-3
+                        .col-sm-4
+                            button(class="btn btn-success btn-block", type="submit") Отправить
+
+        .clearfix
+

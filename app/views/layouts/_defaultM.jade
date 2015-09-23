@@ -1,0 +1,57 @@
+doctype html
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8 ie7"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9 ie8"> <![endif]-->
+<!--[if IE 9]>         <html class="no-js ie9"> <![endif]-->
+<!--[if gt IE 9]>      <html class="no-js gt-ie9"> <![endif]-->
+<!--[if !IE]> <![IGNORE[--><!--[IGNORE[]]--> <html class="no-js noie">
+
+include ../modules/_mixin
+- var title = { description: 'Главная' }
+head
+  meta(charset="utf-8")
+  title superWave
+  meta(name="description", content="")
+  meta(name="viewport", content="width=device-width")
+  link(rel="shortcut icon", href="favicon.ico")
+  // build:css({.tmp,app}) styles/plugin.css
+  // bower:css
+  link(rel='stylesheet', href='../bower_components/font-awesome/css/font-awesome.css')
+  link(rel='stylesheet', href='../bower_components/dw-bxslider-4/dist/jquery.bxslider.css')
+  link(rel='stylesheet', href='../bower_components/SelectOrDie/_src/selectordie.css')
+  // endbower
+  // endbuild
+  link(rel="stylesheet", href="styles/main.css")
+ // link(rel="stylesheet", href="styles/settings_blue.css")
+ // link(rel="stylesheet", href="styles/settings_back.css")
+
+body
+  include ../modules/_popup
+  include ../modules/_headerM
+
+  main
+    block content
+
+  include ../modules/_footer 
+
+  // build:js(./app/) scripts/vendor.js
+  // bower:
+  script(src='../bower_components/jquery/dist/jquery.js')
+  script(src='../bower_components/bootstrap-sass/assets/javascripts/bootstrap.js')
+  script(src='../bower_components/dw-bxslider-4/dist/jquery.bxslider.js')
+  script(src='../bower_components/SelectOrDie/_src/selectordie.js')
+  // endbower
+  // endbuild
+  // build:js scripts/plugins.js
+  script(src='/scripts/plugins/jquery-ui.min.js')
+  script(src='../bower_components/dw-bxslider-4/dist/jquery.bxslider.min.js')
+  script(src="../bower_components/bootstrap-sass/assets/javascripts/bootstrap.min.js")
+  script(src="../bower_components/SelectOrDie/_src/selectordie.min.js")
+  script(src='../bower_components/fancybox/source/jquery.fancybox.pack.js')
+  script(src='../bower_components/fancybox/source/helpers/jquery.fancybox-thumbs.js')
+  script(src='/scripts/plugins/jquery.maskedinput.min.js')
+  // endbuild
+  // build:js(.tmp) scripts/main.js
+  script(src="/scripts/main.js")
+  // endbuild
+

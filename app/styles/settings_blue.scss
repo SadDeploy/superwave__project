@@ -1,0 +1,33 @@
+$brand-success:         #008ee0 !default;
+$brand-success_light:   lighten( desaturate( adjust-hue( #008ee0, 1deg ), 34 ), 49 ) !default;
+
+a {color: $brand-success;}
+a:hover,a:focus, a.active {color: $brand-success;}
+
+.btn-success,
+.btn-default:hover,
+.btn-default:focus {
+  background-color: $brand-success;
+  border-color: $brand-success;
+}
+.btn-success:hover,
+.btn-success:focus {border-color: $brand-success;}
+
+input:focus, textarea:focus, select:focus {border-color: $brand-success;}
+
+.table > thead > tr > th {background-color: $brand-success_light;}
+.breadcrumbs {background-color: $brand-success_light;}
+
+.pagination > .active > a,
+.pagination > .active > a:hover,
+.pagination > .active > a:focus,
+.pagination > .active > span,
+.pagination > .active > span:hover,
+.pagination > .active > span:focus,
+.pagination > li > a:hover,
+.pagination > li > a:focus,
+.pagination > li > span:hover,
+.pagination > li > span:focus {
+  background-color: $brand-success;
+  border-color: $brand-success;
+ }

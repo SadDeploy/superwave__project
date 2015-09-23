@@ -1,0 +1,19 @@
+.breadcrumbs.clearfix
+    .container
+        .col-xs-16
+            ul.breadcrumb
+                li
+                    a(href="#") Главная
+                li.active= title.description
+            h1= title.description
+        if title.description == 'Результаты поиска'
+            .col-xs-16
+                .input-group.col-xs-16
+                    input(type="text", class="form-control")
+                    .input-group-btn.custom-file.input-xs
+                        button.btn.btn-success.btn-block Найти
+                .clearfix
+                p.font-lg.padtop20.text-info По запросу
+                    b  «карта памяти»
+                    |  найдено 26711 совпадений
+        .clearfix

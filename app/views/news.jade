@@ -1,0 +1,32 @@
+
+extends layouts/_default
+
+
+block content
+    - var title = { description: 'Новости' }
+    include modules/_breadcrumbs
+    #main.container.padbot50
+        div
+            .content.padtopbot20(itemscope, itemtype="http://schema.org/Article")
+                .archive__btn.text-right
+                    button.btn.btn-default
+                        i.fa.fa-hdd-o
+                        |  Архив новостей
+                - for (var x = 0; x < 4; x++)
+                   .panel.news.clearfix
+                       .col-xs-16.col-md-5.hidden-xs
+                           a(href="#", itemprop="url")
+                                img(src="images/news1.jpg", alt="", class="news__img img-responsive", itemprop="image")
+                       .col-xs-16.col-md-11
+                            span.news__date(itemprop="datePublished")
+                                i.fa.fa-calendar
+                                |  &nbsp;2015-06-16
+                            h3.news__title(itemprop="name")
+                                a(href="#", itemprop="url", class="text-info") Заголовок для длинной акции сайта Superwave
+                            p.news__description(itemprop="description") Знаете, что вы трудоголик? Как понять, что вам нужно работать меньше, а не больше? Как избавиться от
+                                | желания все успеть и наконец-то выяснить, какую жизнь вы действительно хотите? Знаете, что вы
+                                | трудоголик? Как понять, что вам нужно работать меньше, а не больше?
+            include modules/_paginator
+
+        .clearfix
+

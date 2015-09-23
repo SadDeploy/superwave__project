@@ -1,0 +1,59 @@
+
+extends layouts/_default
+
+
+block content
+    - var title = { description: 'Коробки, коробки для карт, коробка для визиток, boxsh, обечайки' }
+    include modules/_breadcrumbs
+    #main.container.padbot50
+        div
+            .content.padtopbot20
+                .clearfix.tabs
+                    ul.list-unstyled.list-inline.navbar-nav.tabs__titles-js.col-xs-16
+                        li.active
+                            a(href='#', class="tabs__title-js ", id="tab1") Коробки
+                        li
+                            a(href='#', class="tabs__title-js", id="tab2") Коробки для карт
+                        li
+                            a(href='#', class="tabs__title-js", id="tab3") Коробки для визиток
+                        li
+                            a(href='#', class="tabs__title-js", id="tab4") Boxsh
+                        li
+                            a(href='#', class="tabs__title-js", id="tab5") Обечайки
+                    .clearfix
+                    hr
+                    .tab-pane.col-xs-16.clearfix.active
+                        .catalog__btn.text-right
+                            button.btn.btn-default
+                                i.fa.fa-book
+                                |  Каталог штампов
+                        h2 Коробки
+                        - for (var y = 0; y < 4; y++)
+                            .panel.news.clearfix
+                                - for (var x = 0; x < 4; x++)
+                                    .col-xxs-12.col-xs-8.col-md-4.text-center.stamp__category
+                                        a(href="#")
+                                            img(src="images/catalog-stamp.jpg", alt="")
+                                        h3.text-success
+                                            b BOX001
+                                        p Коробка под флешку,
+                                            br
+                                            | 100x137x15 мм
+                                        p
+                                            a.text-info(href="#")
+                                                i.fa.fa-download.text-default
+                                                |  Скачать единичку кроя
+                                            br
+                                            a.text-info(href="#")
+                                                i.fa.fa-upload.text-default
+                                                |  Скачать штамп
+                    .tab-pane.col-xs-16.clearfix
+                        h2 Коробки для карт
+                    .tab-pane.col-xs-16.clearfix
+                        h2 Коробки для визиток
+                    .tab-pane.col-xs-16.clearfix
+                        h2 Boxsh
+                    .tab-pane.col-xs-16.clearfix
+                        h2 Обечайки
+        .clearfix
+

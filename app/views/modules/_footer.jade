@@ -1,0 +1,103 @@
+#top
+    i.fa.fa-chevron-up.text-success
+    |  Наверх
+footer
+    .footer__menu__bar
+        .footer__menu.clearfix.padbot20
+            .container
+                .col-md-116.col-sm-5.clearfix
+                    h6.contacts__title(data-toggle='collapse', data-target='#footer1-collapse') Компания
+                    #footer1-collapse.collapse.navbar-collapse
+                        +list('nav-stacked nav', 'О компании', 'Новости', 'Информационная рассылка', 'Вакансии', 'Мероприятия', 'Контакты')
+                .col-md-116.col-sm-5.clearfix
+                    h6.contacts__title(data-toggle='collapse', data-target='#footer2-collapse') Дистрибуция
+                    #footer2-collapse.collapse.navbar-collapse
+                        +list('nav-stacked nav', 'Модули и карты памяти', 'Копировально-множительная техника', 'Источники бесперебойного питания', 'Аксессуары')
+                .col-md-116.col-sm-5.clearfix
+                    h6.contacts__title(data-toggle='collapse', data-target='#footer3-collapse') Поставки
+                    #footer3-collapse.collapse.navbar-collapse
+                        +list('nav-stacked nav', 'Оборудование', 'Услуги')
+                .col-md-116.col-sm-5.clearfix
+                    h6.contacts__title(data-toggle='collapse', data-target='#footer4-collapse') Производство
+                    #footer4-collapse.collapse.navbar-collapse
+                        +list('nav-stacked nav', 'Полиграфия', 'Каталог штампов', 'Расчет корешка КВС', 'Калькулятор раскроя', 'Упаковка', 'Сборка серверов и компьютеров')
+                .col-md-116.col-sm-5.clearfix
+                    h6.contacts__title(data-toggle='collapse', data-target='#footer5-collapse') Системная интеграция
+                    #footer5-collapse.collapse.navbar-collapse
+                        +list('nav-stacked nav', 'Обслуживание', 'Покопийная печать', 'Услуги колл-центра')
+                .col-md-116.col-sm-5.clearfix
+                    h6.contacts__title(data-toggle='collapse', data-target='#footer6-collapse') Сервис
+                    #footer6-collapse.collapse.navbar-collapse
+                        +list('nav-stacked nav', 'Обслуживание', 'Покопийная печать', 'Услуги колл-центра')
+        .container
+            .footer__bar.clearfix
+                .col-sm-3
+                    a(href="#", class="text-info")
+                        b Новинки
+                .col-sm-3
+                    a(href="#", class="text-info")
+                        b Акции
+                .col-sm-2
+                    a(href="#", class="text-info")
+                        b Новости
+                .col-sm-8.col-xs-16.delivery__bar
+                    form.navbar-form.navbar-right
+                        label.text-info.margright15
+                            b Информационная рассылка
+                        .form-group.input-group.col-xxs-12
+                            input.form-control(type='email', placeholder='e-mail')
+                            .input-group-btn
+                                button(class="btn btn-success btn-block") ok
+                        .clearfix
+    .footer__desc.padbot30
+        .container
+            .footer__contacts.clearfix.padbot40.col-xs-16.text-info
+                h6.hidden-xs.padbot10(data-toggle='collapse', data-target='#footer7-collapse') Контакты
+                #footer7-collapse.collapse.navbar-collapse.pull-left
+                    .row
+                        .col-sm-5
+                            div(itemscope, itemtype="http://schema.org/Organization")
+                                p(itemprop="name")
+                                    b Москва
+                                div(itemprop="address", itemscope, itemtype="http://schema.org/PostalAddress")
+                                    p(itemprop="telephone") +7 (495) 221-66-04
+                                    p
+                                        span(itemprop="postalCode") 119021,
+                                        span(itemprop="addressLocality")  Москва,
+                                    p(itemprop="streetAddress") ул. Павловская, д. 27/29, стр.7
+                        .col-sm-5
+                            div(itemscope, itemtype="http://schema.org/Organization")
+                                p(itemprop="name")
+                                    b Санкт-Петербург
+                                div(itemprop="address", itemscope, itemtype="http://schema.org/PostalAddress")
+                                    p(itemprop="telephone") +7 (812) 325-99-96
+                                    p
+                                        span(itemprop="postalCode") 190000,
+                                        span(itemprop="addressLocality")  Санкт-Петербург,
+                                    p(itemprop="streetAddress") пер. Пирогова, д. 8
+                        .col-sm-6
+                            div(itemscope, itemtype="http://schema.org/Organization")
+                                p(itemprop="name")
+                                    b Казахстан, г. Алматы
+                                div(itemprop="address", itemscope, itemtype="http://schema.org/PostalAddress")
+                                    p(itemprop="telephone") +7 (727) 31-31-500
+                                    p
+                                        span(itemprop="postalCode") 050010,
+                                        span(itemprop="addressLocality")  Казахстан, г. Алматы,
+                                    p(itemprop="streetAddress") пр-т Достык, д. 34а
+                                    p(itemprop="url") www.aswg.kz
+                .col-sm-5.col-xs-16.text-right.pull-right.social
+                    ul.list-unstyled.list-inline.row
+                        li.social-ico
+                            a(href="#" class="social-fa")
+                        li.social-ico
+                            a(href="#" class="social-go")
+                        li.social-ico
+                            a(href="#" class="social-you")
+                        li.social-ico
+                            a(href="#" class="social-odn")
+            .footer__copyright.clearfix.col-xs-16
+                p.pull-left © 2004-2015 Супервэйв Групп
+                p.pull-right
+                    a(href="alkodesign.ru", target="_blank", class="underline__link") Разработка сайта
+                    |  - АlkoDesign

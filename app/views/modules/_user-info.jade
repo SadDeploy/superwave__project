@@ -1,0 +1,20 @@
+.user-info.padbot40.clearfix.font-md.col-xs-16
+    .avatara
+        img(src="images/ava.jpg", class="img-thumbnail")
+    .col-xxs-8.col-xs-12.col-sm-13
+        .row
+            .clearfix
+                p.pull-left.margright40.text-info
+                    b Иванов Иван Иванович
+                p.pull-left.result__article Номер пользователя:
+                    span
+                        b  1325489
+            .clearfix.user-menubar
+                a(href="#", class="btn btn-default btn-md margright10 margbot10") Персональные данные
+                a(href="#", class="btn btn-default btn-md margright10 margbot10") Настройки
+                a(href="#", class="btn btn-default btn-md margright10 margbot10") Мои заказы
+                a(href="#", class="btn btn-default btn-md margright10 margbot10 active") Ваш менеджер
+                if title.description == 'Корзина' || title.description == 'Заголовок H1'
+                    a(href="#", class="btn btn-default btn-md pull-right-md pull-right-lg margbot10")
+                        i.fa.fa-file-text-o
+                        |  Заказ списком

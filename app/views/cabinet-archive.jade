@@ -1,0 +1,78 @@
+
+extends layouts/_default
+
+
+block content
+    - var title = { description: 'Архив заказов' }
+    include modules/_breadcrumbs
+    #main.container.padbot50
+        div
+            .content.padtopbot20
+                include modules/_user-info
+                .col-xs-16
+                    .padtop40.clearfix
+                        h2.pull-left Мои заказы
+                        .mobile__absolute.pull-right
+                            a(href="#", class="btn btn-default pull-right margtop20")
+                                i.fa.fa-file-text-o
+                                |  Заказ списком
+                            a(href="#", class="btn btn-success pull-right margright10 margtop20")
+                                i.fa.fa-file-text-o
+                                |  Архив  заказов
+                        .clearfix
+                        table.table.table-string.table-hover.table-bordered.hidden-sm.hidden-xs.margtop20
+                            thead
+                                tr
+                                    th Номер
+                                    th Дата и время
+                                    th Количество
+                                    th Стоимость руб
+                                    th Статус
+                                    th Комментарий к заказу
+                                    th &nbsp;
+                                    th &nbsp;
+                            tbody
+                                - for (var x = 0; x < 4; x++)
+                                    tr
+                                        td.text-info 3256789
+                                        td 12.12.04
+                                        td 15
+                                        td.text-info 234 784
+                                        td Архив
+                                        td.cabinet__comment-item.text-left Комментарий к заказу номер такой тов две
+                                            br
+                                            | строчки о заказе
+                                        td &nbsp;
+                                        td.busket__del-item.busket__delete-js
+                                            a(href="#", class="text-info")
+                                                i.fa.fa-close.fa-lg.text-danger
+                                                |  Удалить
+                            .table-catalog.hidden-md.hidden-lg.block__delete__js
+                                - for (var x = 0; x < 4; x++)
+                                    .news.margbot20
+                                        h2 Заказ номер:
+                                            span WC4260sp
+                                        ul.list-unstyled.table_of_orders
+                                            li.clearfix
+                                                span Дата и время:
+                                                span.text-info  12.12.04
+                                            li.clearfix
+                                                span Количество:
+                                                span.text-info  15
+                                            li.clearfix
+                                                span Стоимость Р:
+                                                span.text-info
+                                                    b  234 784
+                                            li.clearfix
+                                                span Статус:
+                                                span.text-info  Создан
+                                            li.clearfix
+                                                span Комментарий к заказу:
+                                                p.text-info Комментарий к заказу номер такой тов две строчки о заказе
+                                                    | номер такой тов две строчки о заказе
+                                        div
+                                            a(href="#", class="btn btn-default")
+                                                i.fa.fa-close.fa-lg.text-danger
+                                                |  Удалить
+                        include modules/_paginator
+        .clearfix

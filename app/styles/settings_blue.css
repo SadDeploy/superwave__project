@@ -1,0 +1,37 @@
+a {
+  color: #008ee0; }
+
+a:hover, a:focus, a.active {
+  color: #008ee0; }
+
+.btn-success,
+.btn-default:hover,
+.btn-default:focus {
+  background-color: #008ee0;
+  border-color: #008ee0; }
+
+.btn-success:hover,
+.btn-success:focus {
+  border-color: #008ee0; }
+
+input:focus, textarea:focus, select:focus {
+  border-color: #008ee0; }
+
+.table > thead > tr > th {
+  background-color: #e1f0f9; }
+
+.breadcrumbs {
+  background-color: #e1f0f9; }
+
+.pagination > .active > a,
+.pagination > .active > a:hover,
+.pagination > .active > a:focus,
+.pagination > .active > span,
+.pagination > .active > span:hover,
+.pagination > .active > span:focus,
+.pagination > li > a:hover,
+.pagination > li > a:focus,
+.pagination > li > span:hover,
+.pagination > li > span:focus {
+  background-color: #008ee0;
+  border-color: #008ee0; }

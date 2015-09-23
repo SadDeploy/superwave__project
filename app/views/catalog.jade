@@ -1,0 +1,128 @@
+
+extends layouts/_default
+
+
+block content
+    - var title = { description: 'USB накопители' }
+    include modules/_breadcrumbs
+    #main.container.padbot50
+        div
+            .content.padtopbot20
+                .padbot20.clearfix.text-right
+                    button(type="submit", class="btn btn-default margbot10")
+                        i.fa.fa-file-o
+                        |  заказ списком
+                    button(type="submit", class="btn btn-default margbot10")
+                        i.fa.fa-download
+                        |  выгрузить в CSV
+                include modules/_filter
+                .catalog.clearfix.pull-right.col-xs-16
+                    .pull-left.data__sortM.data__sort-js.text-info Сортировать по:
+                        .inlineb.data__sort-item.data__sort-item-js
+                            a(href="#", class="data__sort") Скидка
+                                i.fa
+                    .pull-right
+                        p
+                            b.font-xlg.text-default 30256
+                            span.text-info  товаров
+                    .clearfix
+                    table.table.table-striped.table-catalog.hidden-sm.hidden-xs
+                        thead
+                            tr.data__sort.data__sort-js
+                                th Артикул
+                                th Наименование
+                                th.data__sort-item.data__sort-item-js Наличие
+                                    i.fa.fa-lg
+                                th.data__sort-item.data__sort-item-js Транзит
+                                    br
+                                    | <14
+                                    i.fa.fa-lg
+                                th.data__sort-item.data__sort-item-js Транзит
+                                    br
+                                    | >14
+                                    i.fa.fa-lg
+                                th.data__sort-item.data__sort-item-js Резерв
+                                    i.fa.fa-lg
+                                th.data__sort-item.data__sort-item-js Цена
+                                    br
+                                    | руб
+                                    i.fa.fa-lg
+                                th Кол-во
+                                th &nbsp;
+                        tbody
+                            - for (var x = 0; x < 16; x++)
+                                tr
+                                    td.busket__article-item.text-info WC4260sp00
+                                    td(colspan="5").busket__name-item
+                                        a(href="#").underline__link Canon PowerShot SX60 HS
+                                    td(colspan="3") &nbsp;
+                                tr
+                                    td.busket__article-item.text-info
+                                        span.show.padbot0.font-sm.text-default Аналоги:
+                                    td.busket__name-item
+                                        - for (var y = 0; y < 3; y++)
+                                            button.btn.btn-default.btn-xs.text-default WC4260sp
+                                    td.busket__availability-item 12
+                                    td.busket__transitm-item 0
+                                    td.busket__transitb-item 0
+                                    td.busket__reserv-item 3
+                                    td.busket__price-item 23 877
+                                    td.busket__quantity-item
+                                        .input-group.product_quantity_js
+                                            a(href="#", class="btn btn-default btn-sm input-group-addon inc") -
+                                            input(type="text", value="1", class="text-center quantity form-control", maxlength="3")
+                                            a(href="#", class="btn btn-default btn-sm input-group-addon dec") +
+                                    td.busket__button-item
+                                        a(href="#", class="btn btn-info btn-sm") В корзину
+                    .table-catalog.hidden-md.hidden-lg
+                        - for (var x = 0; x < 4; x++)
+                            .mini__news.margbot20
+                                div.font-lg
+                                    a(href="#").underline__link Canon PowerShot SX60 HS
+                                div
+                                    p.show.padtop10.padbot0.text-info Аналоги:
+                                    - for (var y = 0; y < 4; y++)
+                                        button.btn.btn-default.btn-sm.margbot10 130К60230
+                                ul.table_of_contents.list-unstyled
+                                    li.clearfix
+                                        span Артикул
+                                        span.text-info WC4260sp00
+                                    li.clearfix
+                                        span Наличие
+                                        span.text-info 12
+                                    li.clearfix
+                                        span Транзит <14
+                                        span.text-info 0
+                                    li.clearfix
+                                        span Транзит >14
+                                        span.text-info 0
+                                    li.clearfix
+                                        span Резерв
+                                        span.text-info 3
+                                    li.clearfix
+                                        span Цена
+                                        span.text-info
+                                            b 235 784
+                                    li.clearfix
+                                        span Кол-во
+                                        span.text-info.product_quantity-mobile
+                                            .input-group.product_quantity_js
+                                                a(href="#", class="btn btn-default btn-sm input-group-addon inc") -
+                                                input(type="text", value="1", class="text-center quantity form-control", maxlength="3")
+                                                a(href="#", class="btn btn-default btn-sm input-group-addon dec") +
+                                button.btn.btn-info  В корзину
+                    .pull-left-md.pull-left-lg
+                        include modules/_paginator
+                    .pull-right.padtopbot20.col-xs-7.row.hidden-sm.hidden-xs
+                        .row
+                            .col-xs-11.inlineb.v-middle.fl-none.text-right  Показывать на странице:
+                            .col-xs-5.inlineb.v-middle.fl-none.row
+                                .row
+                                    select
+                                        option 100
+                                        option 50
+                                        option 10
+                                        option 5
+
+        .clearfix
+

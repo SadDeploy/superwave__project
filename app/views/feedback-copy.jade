@@ -1,0 +1,74 @@
+
+extends layouts/_default
+
+
+block content
+    - var title = { description: 'Обратная связь' }
+    include modules/_breadcrumbs
+    #main.container.padbot50
+        div
+            .content.padtopbot20
+                .col-xs-16
+                    p Взаимодействие корпорации и клиента специфицирует обществвенный системный анализ. По сути, контент стабилизирует сублимированный
+                        | поведенческий таргетинг. Организация практического взаимодействия осмысленно усиливает экспериментальный BTL. Бизнес-план
+                        | восстанавливает комплексный рейтинг. Стоит отметить, что направленный маркетинг основан на опыте повседневного применения.
+                .clearfix
+                form.padtopbot40.col-xs-10.center-block
+                    .form-group.clearfix
+                        .col-sm-4
+                        .col-sm-10
+                            legend Написать сообщение
+                    .form-group.clearfix
+                        .col-sm-4
+                            label ФИО
+                                sup *
+                                |:
+                        .col-sm-10
+                            input(type="text", required)
+                    .form-group.clearfix
+                        .col-sm-4
+                            label E-mail
+                                sup *
+                                |:
+                        .col-sm-10
+                            input(type="email", required)
+                    .form-group.clearfix
+                        .col-sm-4
+                            label Компания:
+                        .col-sm-10
+                            input(type="text")
+                    .form-group.clearfix
+                        .col-sm-4
+                            label Город:
+                        .col-sm-10
+                            select
+                                option Выбрать город
+                                option Выбрать город 2
+                                option Выбрать город 3
+                    .form-group.clearfix
+                        .col-sm-4
+                            label Телефон:
+                        .col-sm-10
+                            input(type="text", class='validate-phone')
+                    .form-group.clearfix
+                        .col-sm-4
+                            label Введите код на картинке
+                                sup *
+                                | :
+                        .col-sm-4
+                            input(type="text", required)
+                        .col-sm-2
+                            img(src="images/capcha.jpg", alt="capcha")
+                    .form-group.clearfix
+                        .col-sm-4
+                        .col-sm-10
+                            p Поля, отмеченные
+                                sup *
+                                | , обязательны для заполнения!
+                    .form-group.clearfix
+                        .col-sm-4
+                        .col-sm-5
+                            button(class="btn btn-success btn-block", type="submit") Отправить
+
+        .clearfix
+

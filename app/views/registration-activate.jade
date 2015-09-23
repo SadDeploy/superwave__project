@@ -1,0 +1,19 @@
+
+extends layouts/_default
+
+
+block content
+    - var title = { description: 'Регистрация' }
+    include modules/_breadcrumbs
+    #main.container.padbot50
+        div
+            .content.padtopbot20
+                .text-center.padtop40.col-xxs-12.col-xs-14.col-sm-14.col-md-12.center-block
+                    h2 Иванов Иван Иванович,
+                    p.font-lg.text-info.margbot40
+                        b Ваша учетная запись активирована!
+                    p На Ваш e-mailxxx, указанный при регистрации, выслан логин и пароль.
+                    p Пожалуйста, воспользуйтесь логином и паролем, указанными в письме для входа в Личный кабинет.
+                    p Внимание! Если вы не являетесь инициатором процедуры регистрации, просто удалите это письмо
+        .clearfix
+

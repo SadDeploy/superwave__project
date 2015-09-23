@@ -1,0 +1,296 @@
+header
+    .container
+        .navbar.desktop-headerbar
+            .col-xs-16.visible-xs
+                h6.contacts__title.padbot10(data-toggle='collapse', data-target='#header-collapse') Контакты
+                #header-collapse.collapse.navbar-collapse.pull-left
+                    .col-xs-16
+                        div(itemscope, itemtype="http://schema.org/Organization")
+                            p(itemprop="name")
+                                b Москва
+                            div(itemprop="address", itemscope, itemtype="http://schema.org/PostalAddress")
+                                p(itemprop="telephone") +7 (495) 221-66-04
+                                p
+                                    span(itemprop="postalCode") 119021,
+                                    span(itemprop="addressLocality")  Москва,
+                                p(itemprop="streetAddress") ул. Павловская, д. 27/29, стр.7
+                    .col-xs-16
+                        div(itemscope, itemtype="http://schema.org/Organization")
+                            p(itemprop="name")
+                                b Санкт-Петербург
+                            div(itemprop="address", itemscope, itemtype="http://schema.org/PostalAddress")
+                                p(itemprop="telephone") +7 (812) 325-99-96
+                                p
+                                    span(itemprop="postalCode") 190000,
+                                    span(itemprop="addressLocality")  Санкт-Петербург,
+                                p(itemprop="streetAddress") пер. Пирогова, д. 8
+                    .col-xs-16
+                        div(itemscope, itemtype="http://schema.org/Organization")
+                            p(itemprop="name")
+                                b Казахстан, г. Алматы
+                            div(itemprop="address", itemscope, itemtype="http://schema.org/PostalAddress")
+                                p(itemprop="telephone") +7 (727) 31-31-500
+                                p
+                                    span(itemprop="postalCode") 050010,
+                                    span(itemprop="addressLocality")  Казахстан, г. Алматы,
+                                p(itemprop="streetAddress") пр-т Достык, д. 34а
+                                p(itemprop="url") www.aswg.kz
+            .col-lg-5.col-md-6.col-sm-7.col-xs-12.col-xxs-12.phone__bar
+                span Телефон горячей линии: &nbsp;
+                    b  8 (800) 200-99-96
+            .col-lg-7.col-md-5.col-sm-7.col-xs-1.col-xxs-9.search__bar
+                form(role='search')
+                    .input-group.col-xs-16
+                        input.search-js.form-control(type='search')
+                        span.input-group-btn
+                            button(type='button', class="btn search_btn-js")
+                                i.fa.fa-search
+            .col-lg-3.col-md-3.col-sm-3.hidden-sm.hidden-xs
+                .dropdown
+                    a(href="#", class="btn btn-default btn-block", data-toggle="dropdown", aria-haspopup="true", aria-expanded="false") Личный кабинет
+                    .dropdown-menu.pull-right
+                        button(type="button", class="close", data-dismiss="dropdown-menu", aria-label="Close") &times;
+                        h3 Иванов Иван Иванович
+                        p.result__article Номер пользователя:
+                            span
+                                b  1325489
+                        p.result__article
+                            a(href="#", class="text-success") Корзина:
+                            span
+                                b  157 товаров
+                        p
+                            a(href="#", class="text-success") Персональные данные
+                        p
+                            a(href="#", class="text-success") Мои заказы
+                        p
+                            a(href="#", class="text-success") Ваш менеджер
+                        .text-center
+                            a(href="#", class="btn btn-default btn-md margbot10")
+                                i.fa.fa-sign-out
+                                |  Выйти из личного кабинета
+            .col-lg-1.col-md-2.col-sm-2.col-xs-2.col-xxs-3.pull-right.text-right.lang__bar(style="white-space:nowrap;")
+                p
+                    i.flag.flag-gb
+                    | en
+            .clearfix
+            nav.navbar.navbar-default(role='navigation')
+                .navbar-header
+                    button.navbar-toggle(type='button', data-toggle='collapse', data-target='#navbar-ex1-collapse')
+                        span.sr-only Toggle navigation
+                        span.icon-bar
+                        span.icon-bar
+                        span.icon-bar
+                    a.navbar-brand(href='/')
+                        img(src="images/logo.jpg", alt="Logo")
+                    .col-xxs-12.visible-sm.visible-xs.text-center.pull-right
+                        .padtopbot20.font-md
+                            a(href="#", class="btn btn-default", data-toggle="dropdown", aria-haspopup="true", aria-expanded="false") Личный кабинет
+                            .dropdown-menu.pull-right
+                                button(type="button", class="close", data-dismiss="dropdown-menu", aria-label="Close") &times;
+                                h3 Иванов Иван Иванович
+                                p.result__article Номер пользователя:
+                                    span
+                                        b  1325489
+                                p.result__article
+                                    a(href="#", class="text-success") Корзина:
+                                    span
+                                        b  157 товаров
+                                p
+                                    a(href="#", class="text-success") Персональные данные
+                                p
+                                    a(href="#", class="text-success") Мои заказы
+                                p
+                                    a(href="#", class="text-success") Ваш менеджер
+                                .text-center
+                                    a(href="#", class="btn btn-default btn-md margbot10")
+                                        i.fa.fa-sign-out
+                                        |  Выйти из личного кабинета
+                    .clearfix.visible-xs
+                    #navbar-ex1-collapse.collapse.navbar-collapse.fl-none-sm
+                        ul.navbar-nav.nav.fl-none-sm
+                            //li.nav__element.nav__element-parent.nav__element-contacts
+                            //    a.nav__element-item(href="javascript:;") Контакты
+                            //    ul.sub-nav.list-unstyled
+                            //        li.nav__element
+                            //            div(itemscope, itemtype="http://schema.org/Organization")
+                            //                p(itemprop="name")
+                            //                    b Москва
+                            //                div(itemprop="address", itemscope, itemtype="http://schema.org/PostalAddress")
+                            //                    p(itemprop="telephone") +7 (495) 221-66-04
+                            //                    p
+                            //                        span(itemprop="postalCode") 119021,
+                            //                        span(itemprop="addressLocality")  Москва,
+                            //                    p(itemprop="streetAddress") ул. Павловская, д. 27/29, стр.7
+                            //        li.nav__element
+                            //            div(itemscope, itemtype="http://schema.org/Organization")
+                            //                p(itemprop="name")
+                            //                    b Санкт-Петербург
+                            //                div(itemprop="address", itemscope, itemtype="http://schema.org/PostalAddress")
+                            //                    p(itemprop="telephone") +7 (812) 325-99-96
+                            //                    p
+                            //                        span(itemprop="postalCode") 190000,
+                            //                        span(itemprop="addressLocality")  Санкт-Петербург,
+                            //                    p(itemprop="streetAddress") пер. Пирогова, д. 8
+                            //        li.nav__element
+                            //            div(itemscope, itemtype="http://schema.org/Organization")
+                            //                p(itemprop="name")
+                            //                    b Казахстан, г. Алматы
+                            //                div(itemprop="address", itemscope, itemtype="http://schema.org/PostalAddress")
+                            //                    p(itemprop="telephone") +7 (727) 31-31-500
+                            //                    p
+                            //                        span(itemprop="postalCode") 050010,
+                            //                        span(itemprop="addressLocality")  Казахстан, г. Алматы,
+                            //                    p(itemprop="streetAddress") пр-т Достык, д. 34а
+                            //                    p(itemprop="url") www.aswg.kz
+                            li.nav__element.active.nav__element-parent
+                                a.nav__element-item(href="javascript:;") Каталог
+                                ul.sub-nav.list-unstyled
+                                    li.nav__element.nav__element-parent
+                                        a.nav__element-item(href="javascript:;") Карты памяти, USB накопители
+                                        .sub-nav.sub-nav__body_cols2
+                                            - for (var y = 1; y < 3; y++)
+                                                .b-list
+                                                    - for (var x = 1; x < 3; x++)
+                                                        ul.list-unstyled.margbot20
+                                                            li.nav__element
+                                                                p.text-success
+                                                                    b USB накопители
+                                                            li.nav__element
+                                                                p
+                                                                    b Карты памяти, индустриальный флеш
+                                                            li.nav__element
+                                                                a.nav__element-item(href="#") Индустриальные карты памяти
+                                                            li.nav__element
+                                                                a.nav__element-item(href="#") Пункт меню карты памяти
+                                                            li.nav__element
+                                                                a.nav__element-item(href="#") Карты памяти название меню
+                                                            li.nav__element
+                                                                a.nav__element-item(href="#") Индустриальные карты памяти
+                                                            li.nav__element
+                                                                p
+                                                                    b Название категории
+                                                            li.nav__element
+                                                                a.nav__element-item(href="#") Индустриальные карты памяти
+                                                            li.nav__element
+                                                                a.nav__element-item(href="#") Пункт меню карты памяти
+                                                            li.nav__element
+                                                                a.nav__element-item(href="#") Карты памяти название меню
+                                                            li.nav__element
+                                                                a.text-success.nav__element-item.margtop10(href="#") Все категории >
+                                    li.nav__element.active.nav__element-parent
+                                        a.nav__element-item(href="javascript:;") Копировальная и печатающая
+                                            | техника, расходные материалы, бумага
+                                        .sub-nav.sub-nav__body_cols3
+                                            - for (var y = 0; y < 3; y++)
+                                                .b-list
+                                                    - for (var x = 1; x < 3; x++)
+                                                        ul.list-unstyled.margbot20
+                                                            li.nav__element
+                                                                p.text-success
+                                                                    b USB накопители
+                                                            li.nav__element
+                                                                p
+                                                                    b Карты памяти, индустриальный флеш
+                                                            li.nav__element
+                                                                a.nav__element-item(href="#") Индустриальные карты памяти
+                                                            li.nav__element
+                                                                a.nav__element-item(href="#") Пункт меню карты памяти
+                                                            li.nav__element
+                                                                a.nav__element-item(href="#") Карты памяти название меню
+                                                            li.nav__element
+                                                                a.nav__element-item(href="#") Индустриальные карты памяти
+                                                            li.nav__element
+                                                                p
+                                                                    b Название категории
+                                                            li.nav__element
+                                                                a.nav__element-item(href="#") Индустриальные карты памяти
+                                                            li.nav__element
+                                                                a.nav__element-item(href="#") Пункт меню карты памяти
+                                                            li.nav__element
+                                                                a.nav__element-item(href="#") Карты памяти название меню
+                                                            li.nav__element
+                                                                a.text-success.nav__element-item.margtop10(href="#") Все категории >
+                                    li.nav__element.nav__element-parent
+                                        a.nav__element-item(href="javascript:;") Модули памяти
+                                        .sub-nav.sub-nav__body_cols1
+                                            .b-list
+                                                - for (var x = 1; x < 3; x++)
+                                                    ul.list-unstyled.margbot20
+                                                        li.nav__element
+                                                            p.text-success
+                                                                b USB накопители
+                                                        li.nav__element
+                                                            p
+                                                                b Карты памяти, индустриальный флеш
+                                                        li.nav__element
+                                                            a.nav__element-item(href="#") Индустриальные карты памяти
+                                                        li.nav__element
+                                                            a.nav__element-item(href="#") Пункт меню карты памяти
+                                                        li.nav__element
+                                                            a.nav__element-item(href="#") Карты памяти название меню
+                                                        li.nav__element
+                                                            a.nav__element-item(href="#") Индустриальные карты памяти
+                                                        li.nav__element
+                                                            p
+                                                                b Название категории
+                                                        li.nav__element
+                                                            a.nav__element-item(href="#") Индустриальные карты памяти
+                                                        li.nav__element
+                                                            a.nav__element-item(href="#") Пункт меню карты памяти
+                                                        li.nav__element
+                                                            a.nav__element-item(href="#") Карты памяти название меню
+                                                        li.nav__element
+                                                            a.text-success.nav__element-item.margtop10(href="#") Все категории >
+                                    li.nav__element
+                                        a.nav__element-item(href="#") Копировальная и печатающая техника, расходные материалы, бумага
+                                    li.nav__element
+                                        a.nav__element-item(href="#") Модули памяти
+                            li.nav__element
+                                a.nav__element-item(href="#") Дистрибуция
+                            li.nav__element
+                                a.nav__element-item(href="#") Поставки
+                            li.nav__element
+                                a.nav__element-item(href="#") Системная интеграция
+                            li.nav__element
+                                a.nav__element-item(href="#") Производство
+                            li.nav__element
+                                a.nav__element-item(href="#") Сервис
+                            li.nav__element
+                                a.nav__element-item(href="#") Компания
+                        //ul.navbar-nav.nav.fl-none-sm
+                        //    +multiMenu([
+                        //        {title: 'Каталог', href: 'javascript:;', subMenu: [
+                        //            {title: 'Карты памяти, USB накопители', subMenu: [
+                        //                {text: '<h5>USB накопители</h5>'},
+                        //                {text: '<h6>Карты памяти, индустриальный флеш</h6>'},
+                        //                {title: 'Индустриальные карты памяти'},
+                        //                {title: 'Пункт меню карты памяти'},
+                        //                {title: 'Карты памяти название меню'},
+                        //                {title: 'Индустриальные карты памяти'},
+                        //                {text: '<h6>Название категории</h6>'},
+                        //                {title: 'Индустриальные карты памяти'},
+                        //                {title: 'Пункт меню карты памяти'},
+                        //                {title: 'Карты памяти название меню'}
+                        //            ]},
+                        //            {title: 'Копировальная и печатающая техника, расходные материалы, бумага'},
+                        //            {title: 'Модули памяти'}], subActive: 0},
+                        //        {title: 'Дистрибуция'},
+                        //        {title: 'Поставки'},
+                        //        {title: 'Системная интеграция'},
+                        //        {title: 'Производство'},
+                        //        {title: 'Сервис'},
+                        //        {title: 'Компания'}], 0)
+
+        .navbar.print-headerbar
+            nav.navbar.navbar-default(role='navigation')
+                .navbar-header
+                    button.navbar-toggle(type='button', data-toggle='collapse', data-target='#navbar-ex1-collapse')
+                        span.sr-only Toggle navigation
+                        span.icon-bar
+                        span.icon-bar
+                        span.icon-bar
+                    a.navbar-brand(href='/')
+                        img(src="images/logo.jpg", alt="Logo")
+                .pull-right
+                    p.padtop20 Телефон горячей линии: &nbsp;
+                        b.text-info  8 (800) 200-99-96

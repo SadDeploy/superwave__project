@@ -1,0 +1,57 @@
+.clearfix.padtop20
+    h2.hide(itemprop="name") Карта памяти TransFlash 8Gb MicroSDHC
+    .col-sm-6
+        ul.bxslider.bxslider__img-card
+            - for (var x = 0; x < 3; x++)
+                li
+                    a(class="fancybox-thumb", rel="gallery1", href="images/product_card.jpg")
+                        img(src="images/product_card.jpg", alt="",itemprop="image")
+        .padbot20
+            #bx-pager_card.bxslider
+                - for (var x = 0; x < 3; x++)
+                    a(href="#" data-slide-index="#{x}")
+                        img(src="images/product_card.jpg", alt="")
+    .col-sm-10.car__description(itemprop="offers", itemscope, itemtype="http://schema.org/Offer")
+        ul.table_of_contents.list-unstyled.col-md-8.col-sm-12.row
+            li.clearfix
+                span Артикул
+                span.text-info 130K60230
+            li.clearfix
+                span Количество в резерве
+                span 0
+            li.clearfix
+                span Количество в транзите
+                span 0
+            li.clearfix
+                span Количество на складе
+                span 0
+        .clearfix
+        h4 Аналоги:
+        ul.list-inline
+            - for (var x = 0; x < 4; x++)
+                li
+                    button.btn.btn-default.margbot10 130K60230
+        p.product__price-card.text-info.padtopbot20 Цена
+            span(itemprop="price")  14 171 руб.
+            meta(itemprop="priceCurrency", content="RUB")
+        .input-group.product_quantity_js.col-xxs-4.col-xs-3.col-sm-4.col-md-3.col-lg-2
+            a(href="#", class="btn btn-default btn-sm input-group-addon inc") -
+            input(type="text", value="1", class="text-center quantity form-control", maxlength="3")
+            a(href="#", class="btn btn-default btn-sm input-group-addon dec") +
+        .col-xxs-8.col-xs-8.col-sm-8.col-md-6.col-lg-5
+            button.btn.btn-success.btn-block Добавить в корзину
+        .clearfix
+        .padtop60.clearfix
+            ul.list-inline.share.pull-right
+                li.font-lg
+                    p Поделиться
+                li.share-ico
+                    a(href="#", class="share-go")
+                li.share-ico
+                    a(href="#", class="share-tw")
+                li.share-ico
+                    a(href="#", class="share-mail")
+                li.share-ico
+                    a(href="#", class="share-fa")
+                li.share-ico
+                    a(href="#", class="share-wf")

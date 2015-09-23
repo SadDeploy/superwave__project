@@ -1,0 +1,104 @@
+
+extends layouts/_default
+
+
+block content
+    - var title = { description: 'Калькулятор раскроя листа' }
+    include modules/_breadcrumbs
+    #main.container.padbot50
+        div
+            .content.padtopbot20.type__text
+                .col-xs-16
+                    p Взаимодействие корпорации и клиента специфицирует обществвенный системный анализ. По сути, контент стабилизирует сублимированный
+                        | поведенческий таргетинг. Организация практического взаимодействия осмысленно усиливает экспериментальный BTL. Бизнес-план
+                        | восстанавливает комплексный рейтинг. Стоит отметить, что направленный маркетинг основан на опыте повседневного применения.
+                    h3 Обратите внимание:
+                    ul
+                        li Вторая цифра обоих форматов - направление долевой;
+                        li При вырубке изделия в один рез разместить не получится;
+                        li Разные печатные машины имеют разные форматы печати и непечатные поля;
+                    a(href="#", class="underline__link") Подробное описание
+                .clearfix
+                form.padtopbot40.col-sm-12.center-block
+                    .form-group.clearfix
+                        .col-sm-5
+                            label Тип печатной машины
+                                sup *
+                                |:
+                        .col-sm-9
+                            select
+                                option листовая
+                                option листовая 2
+                                option листовая 3
+                    .form-group.clearfix
+                        .col-sm-5
+                            label Требуемый формат, мм
+                                sup *
+                                |:
+                        .col-sm-9
+                            .col-xs-7.input-group
+                                input(type="text")
+                            .col-xs-7.pull-right.input-group
+                                input(type="text")
+                    .form-group.clearfix
+                        .col-sm-5
+                            label Формат печатного листа, мм
+                                sup *
+                                | :
+                        .col-sm-9
+                            select
+                                option 297x420
+                                option 120x210
+                                option 297x840
+                            p А3, Офсетка Xerox
+                    .form-group.clearfix
+                        .col-sm-5
+                            label Печатная машина
+                                sup *
+                                | :
+                        .col-sm-9
+                            select
+                                option IGEN3
+                                option IGEN2
+                                option IGEN1
+                            p Полноцветная ЦПМ
+                    .accordion
+                        .accordion-title-js
+                            .form-group.clearfix
+                                .col-sm-5
+                                    a(href="#", class="tabs-accordion-title") Расширенные параметры &nbsp;
+                                        i.fa.fa-lg.text-success
+                                .accordion-item-js
+                                    .col-sm-11
+                                        .checkbox.input-group.col-sm-8
+                                            input(type="checkbox", id="1")
+                                            label(for="1") В один рез
+                                        .checkbox.input-group.col-sm-8
+                                            input(type="checkbox", id="2")
+                                            label(for="2") Учитывать долевую
+                                        .checkbox.input-group.col-sm-8
+                                            input(type="checkbox", id="3")
+                                            label(for="3") Специальный спуск
+                                        .checkbox.input-group.col-sm-8
+                                            input(type="checkbox", id="4")
+                                            label(for="4") Печать без кропов
+                                        .checkbox.input-group.col-sm-8
+                                            input(type="checkbox", id="5")
+                                            label(for="5") Без технологических полей
+                                    .clearfix
+                                    .form-group
+                                        .col-sm-5
+                                            label Тип обработки
+                                                sup *
+                                                | :
+                                        .col-sm-9
+                                            select
+                                                option 297x420
+                                                option 120x210
+                                                option 297x840
+                    .form-group.clearfix
+                        .col-sm-5
+                        .col-sm-5
+                            button(class="btn btn-success btn-block", type="submit") Произвести расчет
+        .clearfix
+

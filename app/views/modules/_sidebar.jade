@@ -1,0 +1,52 @@
+if title.description == 'Менеджер по обеспечению качества' || title.description == 'Вакансии'
+    aside.col-sm-push-11.col-sm-5.col-xs-16
+        .panel.padbot20
+            h4  Вакансии в Москве
+            p
+                a.underline__link(href="#") Менеджер по продажам
+            p
+                a.underline__link(href="#") Менеджер по обеспечению качеcтва
+            p
+                a.underline__link(href="#") Главный инжерен по стоительству
+            p
+                a.underline__link(href="#") Старший менеджер по разработкам и
+                    | регистрации
+        if title.description == 'Вакансии'
+            .panel.padbot20
+                h4  Вакансии в Санкт-Петербурге
+                p
+                    a.underline__link(href="#") Менеджер по продажам
+                p
+                    a.underline__link(href="#") Менеджер по обеспечению качеcтва
+                p
+                    a.underline__link(href="#") Главный инжерен по стоительству
+                p
+                    a.underline__link(href="#") Старший менеджер по разработкам и
+                        | регистрации
+if title.description == 'Заголовок для акции сайта Superwave'
+    aside.col-sm-push-11.col-sm-5.hidden.visible-sm.visible-md.visible-lg
+        .panel.padbot20
+            h2.padtop40  Последние акции
+            - for (var x = 0; x < 5; x++)
+                .mini__news.clearfix
+                    .col-sm-6.row.hidden-xs.hidden-sm
+                        span.mini__news-data
+                            b 27 июля 2015
+                        img(src="images/news_mini.jpg", alt="", class="img-responsive")
+                    .col-md-11.col-xs-16.padtop20
+                        p.mini__news-title Заголовок для новости сайта
+                            | Superwave
+if title.description == 'Заголовок для новости сайта Superwave' || title.description == 'Заголовок H1'
+    aside.col-sm-push-11.col-sm-5.hidden.visible-sm.visible-md.visible-lg
+        .panel.padbot20
+            h2.padtop40  Последние новости
+            - for (var x = 0; x < 5; x++)
+                .mini__news.clearfix
+                    .col-sm-6.row.hidden-xs.hidden-sm
+                        span.mini__news-data
+                            b 27 июля 2015
+                        img(src="images/news_mini.jpg", alt="", class="img-responsive")
+                    .col-md-11.col-xs-16.padtop20
+                        p.mini__news-title
+                            a(href="#") Заголовок для новости сайта
+                                | Superwave

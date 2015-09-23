@@ -1,0 +1,66 @@
+
+extends layouts/_default
+
+
+block content
+    - var title = { description: 'Личный кабинет' }
+    include modules/_breadcrumbs
+    #main.container.padbot50
+        div
+            .content.padtopbot20
+                include modules/_user-info2
+                .col-sm-13.settings
+                    .clearfix
+                        .news.text-center-xs
+                            h3.margbot30 Выбор шаблона оформления
+                            .inlineb.text-center.margright100.margbot10
+                                a(href="#")
+                                    img(src="images/settings_01.png", class="img-responsive margbot10")
+                                p Горизонтальное меню (по умолчанию)
+                            .inlineb.text-center.margbot10
+                                a(href="#")
+                                    img(src="images/settings_02.png", class="img-responsive margbot10")
+                                p Вертикальное меню
+                        .news.text-center-xs
+                            h3.margbot30 Цветовые схемы
+                            .inlineb.text-center.margright10
+                                a(href="#",class="theme scheme blue_scheme") &nbsp;
+                                p Синяя
+                            .inlineb.text-center
+                                a(href="#",class="theme active scheme green_scheme") &nbsp;
+                                p Зеленая
+                        .news.text-center-xs
+                            h3.margbot30 Пользовательские темы
+                            .inlineb.text-center.margright10
+                                a(href="#", class="theme")
+                                    img(src="images/settings_03.jpg")
+                                p Натюрморт
+                            .inlineb.text-center.margright10
+                                a(href="#", class="theme")
+                                    img(src="images/settings_04.jpg")
+                                p Чайная
+                            .inlineb.text-center.margright30
+                                a(href="#", class="theme active")
+                                    img(src="images/settings_05.jpg")
+                                p Дерево
+                            .inlineb.theme__file
+                                .col-sm-5.padtop20.text-right
+                                    label Загрузить файл
+                                .col-sm-11.row
+                                    .input-group.col-xs-16
+                                        input(type="text", class="name_js form-control", readonly, placeholder="Файл не выбран")
+                                        .input-group-btn.custom-file.input-group-btn
+                                            input(type="file", class="file_js")
+                                            button.btn.btn-success.btn-block Добавить
+                        .news.text-center-xs
+                            h3.margbot30 Логотип
+                            .inlineb.row.theme__file
+                                .col-sm-5.padtop20.text-right
+                                    label Загрузить файл
+                                .col-sm-11.row
+                                    .input-group.col-xs-16
+                                        input(type="text", class="name_js form-control", readonly, placeholder="Файл не выбран")
+                                        .input-group-btn.custom-file.input-group-btn
+                                            input(type="file", class="file_js")
+                                            button.btn.btn-success.btn-block Добавить
+        .clearfix

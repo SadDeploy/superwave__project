@@ -1,0 +1,18 @@
+
+extends layouts/_default
+
+
+block content
+    - var title = { description: 'Заказ' }
+    include modules/_breadcrumbs
+    #main.container.padbot50
+        div
+            .content.padtopbot20
+                include modules/_user-info
+                .text-center.padtop40
+                    h2 Спасибо за заказ!
+                    h4
+                        b Ваш заказ  №151646546631 принят
+                    a(href="#", class="underline__link") Распечатать карточку заказа
+        .clearfix
+

@@ -1,0 +1,93 @@
+#resume_send.popup
+    .text-center
+        h4 Добрый день, Владимир Владимирович!
+        p.font-lg Спасибо Вам за интерес, проявленный к нашей компании.
+            | Мы получили Ваше резюме и обязательно его рассмотрим.
+            | Если в данный момент у нас нет подходящей для Вас вакансии,
+            | мы сохраним резюме в нашей базе и свяжемся с Вами,
+            | когда у нас возникнет такая необходимость.
+        p.font-lg
+            b С уважением, служба персонала
+
+#feedback_send.popup
+    .text-center
+        h3 Спасибо за обращение!
+        h4 Ваше сообщение отправлено.
+
+#feedback_form.popup
+    form.padtopbot40.col-xs-16.col-sm-15.center-block
+        .form-group.clearfix
+            .col-sm-10
+                legend Форма отправки резюме
+        .form-group.clearfix
+            .col-sm-4
+                label Город:
+            .col-sm-10
+                select
+                    option офсетная
+                    option листовая 2
+                    option листовая 3
+        .form-group.clearfix
+            .col-sm-4
+                label Вакансия:
+            .col-sm-10
+                select
+                    option офсетная
+                    option листовая 2
+                    option листовая 3
+        .form-group.clearfix
+            .col-sm-4
+                label ФИО
+                    sup *
+                    | :
+            .col-sm-10
+                input(type="text", required)
+        .form-group.clearfix
+            .col-sm-4
+                label Дата рождения
+                    sup *
+                    | :
+            .col-sm-10
+                input(type="text", class="validate-date", required)
+        .form-group.clearfix
+            .col-sm-4
+                label Образование
+                    sup *
+                    | :
+            .col-sm-10
+                input(type="text", required)
+        .form-group.clearfix
+            .col-sm-4
+                label E-mail
+                    sup *
+                    | :
+            .col-sm-10
+                input(type="email", required)
+        .form-group.clearfix
+            .col-sm-4
+                label Прикрепить резюме:
+            .col-sm-10
+                .input-group.col-sm-16.col-xs-16
+                    input(type="text", class="name_js form-control", readonly)
+                    .input-group-addon.custom-file
+                        input(type="file", class="file_js")
+                        button.btn.btn-success.btn-block Добавить
+        .form-group.clearfix
+            .col-sm-4
+                label Введите код на картинке
+                    sup *
+                    | :
+            .col-sm-4
+                input(type="text", required)
+            .col-sm-2
+                img(src="images/capcha.jpg", alt="capcha")
+        .form-group.clearfix
+            .col-sm-4
+            .col-sm-10
+                p Поля, отмеченные
+                    sup *
+                    | , обязательны для заполнения!
+        .form-group.clearfix
+            .col-sm-4
+            .col-sm-6.col-xs-8.col-xxs-12.center-block
+                a(href="##resume_send", class="popup__js btn btn-success btn-block", type="submit") Отправить резюме

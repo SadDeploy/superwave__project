@@ -1,0 +1,30 @@
+
+extends layouts/_default
+
+
+block content
+    - var title = { description: 'Заголовок для новости сайта Superwave' }
+    include modules/_breadcrumbs
+    #main.container.padbot50
+        include modules/_sidebar
+        .col-sm-pull-5.col-sm-10
+            .content.aticle_post(itemscope, itemtype="http://schema.org/Article")
+                p.padtop20
+                    span.news__date(itemprop="datePublished")
+                        i.fa.fa-calendar
+                        |  2015-06-16
+                img(src="images/news_img.jpg", alt="", itemprop="image")
+                div(itemprop="articleBody description")
+                    p Взаимодействие корпорации и клиента специфицирует обществвенный системный анализ. По
+                        | сути, контент стабилизирует сублимированный поведенческий таргетинг. Организация
+                        | практического взаимодействия осмысленно усиливает экспериментальный BTL. Бизнес-план
+                        | восстанавливает комплексный рейтинг. Стоит отметить, что направленный маркетинг основан
+                        | на опыте повседневного применения.
+                    p К тому же точечное воздействие последовательно транслирует фирменный медиабизнес,
+                        | отвоевывая рыночный сегмент. Рекламное сообщество масштабирует креативный бренд,
+                        | учитывая современные тенденции. Более того, ассортиментная политика предприятия
+                        | охватывает анализ зарубежного опыта.
+            include modules/_pager
+
+        .clearfix
+

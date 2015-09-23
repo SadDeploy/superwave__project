@@ -1,0 +1,12 @@
+@media screen {
+  .footer__menu__bar, .user-menubar, .desktop-headerbar {
+    display: none; }
+
+  .print-headerbar {
+    display: block; } }
+@media print {
+  .footer__menu__bar, .user-menubar, .desktop-headerbar {
+    display: none; }
+
+  .print-headerbar {
+    display: block; } }

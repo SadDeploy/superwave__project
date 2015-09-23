@@ -1,0 +1,49 @@
+
+extends layouts/_default
+
+
+block content
+    - var title = { description: 'Заказ списком' }
+    include modules/_breadcrumbs
+    #main.container.padbot50
+        div
+            .content.padtopbot20
+                form.order__list
+                    .col-sm-16
+                        p.font-lg
+                            b.text-info Для заказа списком:
+                        p Воспользуйтесь полем для загрузки файла, предварительно заполнив по образцу (образец можно скачать ниже);
+                        p.padtop10
+                            i.fa.fa-file-o &nbsp;
+                            a(href="#", class="underline__link") Образец заполнения файла
+                    .padbot80
+                        .form-group.clearfix
+                            .col-sm-9
+                                label.text-info.font-wd Загрузить файл
+                            .col-sm-9
+                                .input-group.col-sm-16
+                                    input(type="text", class="name_js form-control", readonly)
+                                    .input-group-btn.custom-file.input-group-btn(style="width: 140px;")
+                                        input(type="file", class="file_js")
+                                        button.btn.btn-info.btn-block Выбрать файл
+                        .form-group.clearfix
+                            .col-sm-9
+                                p Допустимые форматы:
+                                    span.text-info .txt, .csv, .xls, .xlsx
+                        .form-group.clearfix
+                            .col-sm-9
+                                button(class="btn btn-success btn-long pull-right", type="submit") Отправить
+                    .padbot40
+                        .col-sm-16
+                            p или полем "Заказ списком". Укажите в данном поле партномер и количество через пробел.
+                        .form-group.clearfix
+                            .col-sm-9
+                                label.text-info.font-wd Заказ списком
+                            .col-sm-9
+                                textarea
+                        .form-group.clearfix
+                            .col-sm-9
+                                button(class="btn btn-success btn-long pull-right", type="submit") Отправить
+
+        .clearfix
+

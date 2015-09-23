@@ -1,0 +1,35 @@
+
+extends layouts/_default
+
+
+block content
+    - var title = { description: 'ВОХ001, Коробка под флешку, 100*137*15 мм' }
+    include modules/_breadcrumbs
+    #main.container.padbot50
+        div
+            .content.padbot40.aticle_post
+                .panel.news.clearfix.padtop0
+                    h2 Единичка кроя
+                    .col-sm-12.col-xs-16.center-block
+                        img(src="images/stamp_01.jpg", alt="", class="img-responsive")
+                    .text-left.padtop50
+                        button.btn.btn-default
+                            i.fa.fa-download.text-default
+                            |  Скачать единичку кроя
+                .panel.news.clearfix
+                    h2 Штамп
+                    .col-sm-12.col-xs-16.center-block
+                        img(src="images/stamp_02.jpg", alt="", class="img-responsive")
+                    .text-left.padtop50
+                        button.btn.btn-default
+                            i.fa.fa-download.text-default
+                            |  Скачать единичку кроя
+            .panel.clearfix.padtop70.prodict__line
+                h2.col-xs-16.margbot40 Примеры готовой продукции
+                - for (var x = 1; x < 4; x++)
+                    .col-xxs-12.col-xs-8.col-sm-3.margbot10
+                        a(href="images/news_img.jpg", class="fancybox", rel="gallery")
+                            img(src="images/examples_0#{x}.jpg", alt="", class="img-responsive")
+
+
+        .clearfix

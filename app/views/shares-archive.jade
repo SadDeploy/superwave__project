@@ -1,0 +1,72 @@
+
+extends layouts/_default
+
+
+block content
+    - var title = { description: 'Акции' }
+    include modules/_breadcrumbs
+    #main.container.padbot50
+        div
+            .content.padtopbot20(itemscope, itemtype="http://schema.org/Article")
+                .archive__btn.text-right
+                    - for (var x = 4; x > 1; x--)
+                        button.btn.btn-default.margbot10 Акции 201#{x} г.
+                - for (var x = 0; x < 2; x++)
+                   .panel.news.clearfix
+                       .col-xs-16.col-md-5.hidden-xs
+                            a(href="#", itemprop="url")
+                                img(src="images/news1.jpg", alt="", class="news__img img-responsive", itemprop="image")
+                       .col-xs-16.col-md-11
+                            span.news__date(itemprop="datePublished")
+                                i.fa.fa-calendar
+                                |  2015-06-16
+                            h3.news__title(itemprop="name")
+                                a(href="#", itemprop="url", class="text-info") Заголовок для длинной акции сайта Superwave
+                            p.news__description(itemprop="description") Знаете, что вы трудоголик? Как понять, что вам нужно работать меньше, а не больше? Как избавиться от
+                                | желания все успеть и наконец-то выяснить, какую жизнь вы действительно хотите? Знаете, что вы
+                                | трудоголик? Как понять, что вам нужно работать меньше, а не больше?
+                            span.news__late.text-info
+                                i.fa.fa-clock-o.fa-lg
+                                |  Срок акции истек
+                .col-xs-16.fl-none
+                    h2.padtop60 Декабрь
+                - for (var x = 0; x < 2; x++)
+                   .panel.news.clearfix
+                       .col-xs-16.col-md-5.hidden-xs
+                            a(href="#", itemprop="url")
+                                img(src="images/news1.jpg", alt="", class="news__img img-responsive", itemprop="image")
+                       .col-xs-16.col-md-11
+                            span.news__date(itemprop="datePublished")
+                                i.fa.fa-calendar
+                                |  2015-06-16
+                            h3.news__title(itemprop="name")
+                                a(href="#", itemprop="url", class="text-info") Заголовок для длинной акции сайта Superwave
+                            p.news__description(itemprop="description") Знаете, что вы трудоголик? Как понять, что вам нужно работать меньше, а не больше? Как избавиться от
+                                | желания все успеть и наконец-то выяснить, какую жизнь вы действительно хотите? Знаете, что вы
+                                | трудоголик? Как понять, что вам нужно работать меньше, а не больше?
+                            span.news__late.text-info
+                                i.fa.fa-clock-o.fa-lg
+                                |  Срок акции истек
+                .col-xs-16.fl-none
+                    h2.padtop60 Ноябрь
+                - for (var x = 0; x < 2; x++)
+                   .panel.news.clearfix
+                       .col-xs-16.col-md-5.hidden-xs
+                            a(href="#", itemprop="url")
+                                img(src="images/news1.jpg", alt="", class="news__img img-responsive", itemprop="image")
+                       .col-xs-16.col-md-11
+                            span.news__date(itemprop="datePublished")
+                                i.fa.fa-calendar
+                                |  2015-06-16
+                            h3.news__title(itemprop="name")
+                                a(href="#", itemprop="url", class="text-info") Заголовок для длинной акции сайта Superwave
+                            p.news__description(itemprop="description") Знаете, что вы трудоголик? Как понять, что вам нужно работать меньше, а не больше? Как избавиться от
+                                | желания все успеть и наконец-то выяснить, какую жизнь вы действительно хотите? Знаете, что вы
+                                | трудоголик? Как понять, что вам нужно работать меньше, а не больше?
+                            span.news__late.text-info
+                                i.fa.fa-clock-o.fa-lg
+                                |  Срок акции истек
+            include modules/_paginator
+
+        .clearfix
+

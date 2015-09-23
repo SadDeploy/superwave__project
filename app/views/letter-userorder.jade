@@ -1,0 +1,92 @@
+
+extends layouts/_letter
+
+
+block content
+    tr
+        td(align="left")
+            span(style="font-size: 30px; color: #000;") Здравствуйте, Иванов Иван Иванович
+    tr
+        td(height="40", colspan="3")
+            img(src="images/empty.png", alt="", border="0", height="40", width="5")
+    tr
+        td(align="left") Вы разместили заказ на нашем сайте&nbsp;
+            a(href="#", style="color: #00ac5c; text-decoration: underline;") superwave.ru
+    tr
+        td(height="24", colspan="3")
+            img(src="images/empty.png", alt="", border="0", height="24", width="5")
+    tr
+        td(align="left") В ближайшее время, после обработки заказа, с вами свяжется ваш менеджер:&nbsp;
+            span Валера
+            br
+            | [CONTACTS_MANAGER]
+    tr
+        td(height="42", colspan="3")
+            img(src="images/empty.png", alt="", border="0", height="42", width="5")
+    tr
+        td(align="left") Заказ [NNNNN] от [DATE]
+    tr
+        td(height="15", colspan="3")
+            img(src="images/empty.png", alt="", border="0", height="15", width="5")
+    tr
+        td
+            table(align="center", valign="top", border="0", cellpadding="0", cellspacing="0", style="width: 100%;")
+                thead
+                    tr(align="center", bgcolor="f5f5f5", valign="top", border="0", cellpadding="0", cellspacing="0", style="border-bottom: 1px solid #dbdbdb; font-size: 14px; color: #000;")
+                        th(style="padding: 26px 5px;") Артикул
+                        th(align="left", style="padding: 26px 5px;") Наименования
+                        th(style="padding: 26px 5px;") Количество
+                        th(style="padding: 26px 5px;") Цена руб.
+                        th(style="padding: 26px 5px;") Сумма
+                tbody
+                    tr(bgcolor="ffffff")
+                        td(align="center", style="font-size: 13px; font-weight: 600; padding: 26px 5px; color: #000;") WC4260sp
+                        td(align="left", style="padding: 26px 5px;")
+                            a(href="#", style="color: #00ac5c; text-decoration: underline;") Canon PowerShot SX60 HS
+                        td(align="center", style="padding: 26px 5px;") 23
+                        td(align="center", style="padding: 26px 5px;") 234 784
+                        td(align="center", style="font-weight: 600; padding: 26px 5px;") 234 784
+                    tr(bgcolor="fafafa")
+                        td(align="center", style="font-size: 13px; font-weight: 600; padding: 26px 5px; color: #000;") WC4260sp
+                        td(align="left", style="padding: 26px 5px;")
+                            a(href="#", style="color: #00ac5c; text-decoration: underline;") Canon PowerShot SX60 HS
+                        td(align="center", style="padding: 26px 5px;") 23
+                        td(align="center", style="padding: 26px 5px;") 234 784
+                        td(align="center", style="font-weight: 600; padding: 26px 5px;") 234 784
+                    tr(bgcolor="ffffff")
+                        td(align="center", style="font-size: 13px; font-weight: 600; padding: 26px 5px; color: #000; border-bottom: 1px solid #f2f2f2;") WC4260sp
+                        td(align="left", style="padding: 26px 5px;  border-bottom: 1px solid #f2f2f2;")
+                            a(href="#", style="color: #00ac5c; text-decoration: underline;  border-bottom: 1px solid #f2f2f2;") Canon PowerShot SX60 HS
+                        td(align="center", style="padding: 26px 5px;  border-bottom: 1px solid #f2f2f2;") 23
+                        td(align="center", style="padding: 26px 5px;  border-bottom: 1px solid #f2f2f2;") 234 784
+                        td(align="center", style="font-weight: 600; padding: 26px 5px;  border-bottom: 1px solid #f2f2f2;") 234 784
+                tfoot
+                    tr(bgcolor="ffffff")
+                        td(align="right", colspan="5", style="font-size: 24px; padding: 33px 0; color: #000;") Итого
+                            span(style="font-weight: 600;")  185 250 Р
+    tr
+        td(height="25", colspan="3")
+            img(src="images/empty.png", alt="", border="0", height="25", width="5")
+    tr
+        td
+            table(align="left", valign="top", border="0", cellpadding="0", cellspacing="0", style="width: 100%;")
+                tbody
+                    tr(bgcolor="ffffff")
+                        td(valign="top")
+                          span(style="font-weight: 600; color: #000;") Комментарий:
+                          span Если вы не являетесь инициатором процедуры регистрации, просто удалите это письмо». Это письмо
+                            |было создано автоматически, не отвечайте на него. Если вы не являетесь инициатором процедуры
+                            | регистрации, просто удалите это письмо». Это письмо было создано автоматически, не отвечайте на
+                            | него.
+    tr
+        td(height="65", colspan="3")
+            img(src="images/empty.png", alt="", border="0", height="65", width="5")
+    tr
+        td(align="left")
+            span(style="color: #000; font-weight: 600;") Внимание!
+            |  Если вы не являетесь инициатором процедуры регистрации, просто удалите это письмо».
+            br
+            | Это письмо было создано автоматически, не отвечайте на него.
+    tr
+        td(height="120", colspan="3")
+            img(src="images/empty.png", alt="", border="0", height="120", width="5")

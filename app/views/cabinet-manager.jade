@@ -1,0 +1,35 @@
+
+extends layouts/_default
+
+
+block content
+    - var title = { description: 'Кабинет менеджера' }
+    include modules/_breadcrumbs
+    #main.container.padbot50
+        div
+            .content.padtopbot20
+                include modules/_user-info
+                form.col-xs-16
+                    .padtop40.busket.clearfix
+                        h2.margbot40 Ваш менеджер
+                        .font-md
+                            p
+                                b.text-info ФИО:
+                                |  Сидоров Александр Евгеньевич
+                            p
+                                b.text-info E-mail:
+                                |  1235644@mail.ru
+                            p
+                                b.text-info Skype:
+                                |  136_sw
+                            p
+                                b.text-info ICQ:
+                                |  123434356
+                            p
+                                b.text-info Телефон:
+                                |  (812) 323-12-25 доб. 15
+                            p
+                                b.text-info Город:
+                                |  Санкт-Петербург
+        .clearfix
+
