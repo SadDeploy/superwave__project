@@ -17,15 +17,27 @@ block content
                         |  выгрузить в CSV
                 include modules/_filter
                 .catalog.clearfix.pull-right.col-xs-16
-                    .pull-left.data__sortM.data__sort-js.text-info Сортировать по:
-                        .inlineb.data__sort-item.data__sort-item-js
-                            a(href="#", class="data__sort") Скидка
-                                i.fa
-                    .pull-right
-                        p
+                    .margbot20.text-center.filter-list
+                        .data__sortM.data__sort-js.text-info.pull-left.padtop10 Сортировать по:
+                            .inlineb.data__sort-item.data__sort-item-js
+                                a(href="#", class="data__sort") Скидка
+                                    i.fa
+                        .inlineb.v-middle.margright40
+                            p.text-success.margbot0
+                                b Текущий курс USD:
+                                    span.text-info  67.79 руб
+                        .inlineb.v-middle
+                            .inlineb.v-middle Цена:
+                            .inlineb.v-middle
+                                select
+                                    option По умолчанию
+                                    option 0 По умолчанию
+                                    option 1 По умолчанию
+                                    option 2 По умолчанию
+                        .pull-right.padtop4
                             b.font-xlg.text-default 30256
                             span.text-info  товаров
-                    .clearfix
+                        .clearfix
                     table.table.table-striped.table-catalog.hidden-sm.hidden-xs
                         thead
                             tr.data__sort.data__sort-js

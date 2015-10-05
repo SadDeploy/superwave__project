@@ -1,6 +1,11 @@
 .col-md-16.col-lg-4.filter
     a(href="#", class="show-title-js underline__link hidden-lg") Выбрать по параметрам
-    form.show-item-js
+    form.show-item-js.p-relative
+        .filter-count.filter-count-js
+            .input-group
+                input(type="text", id="count" class="form-control", value="Выбрано 149", disabled)
+                .input-group-btn
+                    a(href="#").btn.btn-success Показать
         .input-group.padbot10.col-xs-16.ui-widget
             input(type="text", class="form-control tags", placeholder="Поиск по артикулу")
             .empty-message
@@ -37,18 +42,18 @@
                         i.fa.fa.lg.text-success.pull-left
                         span.pull-left  Цена
                     .accordion-item.accordion-item-js
-                        .checkbox.margtop0
-                            input(type="checkbox", id="default")
-                            label(for="default") По умолчанию
-                        p.text-success.margbot0
-                            b Текущий курс USD:
-                                span.text-info  67.79 руб
-                        .radio.radio-inline
-                            input(type="radio", id="rub", name="course", checked)
-                            label(for="rub") В рублях
-                        .radio.radio-inline
-                            input(type="radio", id="usa", name="course")
-                            label(for="usa") В долларах
+                        //.checkbox.margtop0
+                        //    input(type="checkbox", id="default")
+                        //    label(for="default") По умолчанию
+                        //p.text-success.margbot0
+                        //    b Текущий курс USD:
+                        //        span.text-info  67.79 руб
+                        //.radio.radio-inline
+                        //    input(type="radio", id="rub", name="course", checked)
+                        //    label(for="rub") В рублях
+                        //.radio.radio-inline
+                        //    input(type="radio", id="usa", name="course")
+                        //    label(for="usa") В долларах
                         .slider-title.product_quantity_js.padtop20
                             .inlineb.v-middle от
                             input(type="text", class="start col-xs-6 fl-none inlineb v-middle", readonly)
@@ -129,3 +134,7 @@
                         i.fa.fa.lg.text-success.pull-left
                         span.pull-left  Доп. параметры
                     .accordion-item.accordion-item-js Текст
+                li.accordion-title-js
+                    .accordion-title.clearfix.text-center
+                        input(type="submit", value="Принять", class="btn btn-success")
+                        input(type="reset", value="Сбросить", class="btn btn-info margleft10")

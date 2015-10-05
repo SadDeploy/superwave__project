@@ -1898,8 +1898,6 @@ input, textarea, select {
     opacity: 1; }
   input[disabled], fieldset[disabled] input, textarea[disabled], fieldset[disabled] textarea, select[disabled], fieldset[disabled] select {
     cursor: not-allowed; }
-  input + .btn, textarea + .btn, select + .btn {
-    margin-left: -3px; }
 
 select {
   position: relative;
@@ -4155,6 +4153,9 @@ footer .nav__element-item {
     padding-top: 17px;
     margin-left: -21px; }
 
+.padtop4 {
+  padding-top: 4px; }
+
 .user__img {
   max-width: 220px; }
 
@@ -4197,13 +4198,19 @@ footer .nav__element-item {
   background-color: #00ac5c;
   border-color: #00ac5c;
   text-decoration: none; }
+  .btn-default.active i, .btn-default:hover i {
+    color: #fff !important; }
 .btn-default:focus {
   color: #000;
   text-decoration: none; }
+  .btn-default:focus i {
+    color: #000 !important; }
 .btn-default.active:hover {
   color: #000;
   background-color: #fff;
   border-color: #00ac5c; }
+.btn-default:active i {
+  color: #000 !important; }
 
 .btn-info.active, .btn-info:hover {
   color: #fff;
@@ -4337,6 +4344,15 @@ footer .nav__element-item {
     font-size: 30px;
     font-weight: 500; }
 
+.filter-count {
+  display: none;
+  width: 220px;
+  position: absolute;
+  right: -205px;
+  top: 50%; }
+  .filter-count input {
+    border: 2px solid #00ac5c; }
+
 .share li:first-child {
   vertical-align: top; }
   .share li:first-child p {
@@ -4455,6 +4471,9 @@ footer .nav__element-item {
 
 .product_quantity_js input {
   padding: 7px; }
+
+input.btn {
+  width: auto; }
 
 .table_of_orders li {
   margin-bottom: 15px; }
@@ -4894,7 +4913,13 @@ footer .nav__element-item {
     display: block; }
 
   .nav .nav__element-contacts {
-    display: none; } }
+    display: none; }
+
+  .filter-list > div {
+    width: 50%;
+    float: left !important;
+    margin: 0;
+    padding-top: 13px; } }
 @media (min-width: 466px) and (max-width: 767px) {
   .search-js {
     position: absolute !important;
@@ -4912,6 +4937,12 @@ footer .nav__element-item {
       max-width: 370px;
       width: 370px; } }
 @media (max-width: 767px) {
+  .filter-list > div {
+    width: 50%;
+    float: left !important;
+    margin: 0;
+    padding-top: 13px; }
+
   header {
     padding-top: 0; }
 
@@ -5079,6 +5110,9 @@ footer .nav__element-item {
   header.padtop20 {
     padding-top: 0; } }
 @media (max-width: 465px) {
+  .filter-list > div {
+    width: 100%; }
+
   .phone__bar {
     font-size: 14px; }
     .phone__bar b {
